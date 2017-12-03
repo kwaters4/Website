@@ -1,5 +1,5 @@
 title:  Kevin Waters
-tagline:  a minimalist Jekyll theme
+tagline:  A personal portfolio
 
 # Authors documented under _data
 
@@ -11,6 +11,7 @@ disqus:
 google-ID: 'UA-80213386-1'
 
 menu:
+- {name: 'Science', path: 'menu', url: 'science.html'}
 - {name: 'About', path: 'menu', url: 'about.html'}
 - {name: 'Writing', path: 'menu', url: 'writing.html'}
 - {name: 'Contact', path: 'menu', url: 'contact.html'}
