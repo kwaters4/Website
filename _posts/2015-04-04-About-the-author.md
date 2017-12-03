@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "About the Author"
-author: "Paul Le"
+author: "Kevin Waters"
 categories: journal
 tags: [documentation,sample]
 image:
