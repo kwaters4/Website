@@ -3,6 +3,8 @@ layout: page
 title: About
 ---
 
+# Site is under construction
+
 ### Kevin Waters
 ### PhD. Candidate at Michigan Tech.
 
