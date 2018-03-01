@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+          <meta name="viewport" content="width=device-width">
+
+		<title>ARL Postdoc Presentation</title>
+    <meta name="description" content="Post Doc Presentation">
+    <meta name="author" content="Kevin Waters">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+           <h2>An Investigation of Boron Nitride Nanomaterial Functionalization  </h2>
+           <p>
+           <small> At the Army Research Laboratory </small>
+           </p>
+           <p>
+           <small>by <a href="https://kwaters4.github.io/">Kevin Waters</a></small>
+           </p>
+        </section>
+
+				<section>
+          <div class="row">
+            <div class="column">
+              <h2>BN<sub>2</sub> Monolayer</h2>
+              <ul>
+                <li>Atoms 2B + 4N</li>
+                <li>Symmetry : Amm2 (38)</li>
+                <li>Lattice Vectors </br>
+                  a : 6.84 <span>&#8491;</span> </li>
+                  b : 2.55 <span>&#8491;</span> </li>
+                </ul>
+              </div>
+            <div class="column">
+              <picture>
+                <img src="Lattice.jpg" alt="Lattice" style="width:2283px;height2834px;">
+              </picture>
+                </div>
+          </div>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+  		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+		</script>
+	</body>
+</html>
