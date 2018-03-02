@@ -8,10 +8,28 @@ image:
   feature: BSA_BNNT_2.png
   creditlink: ""
 ---
+### Publications 
 
-Stability of 3D and 2D Au Clusters on Boron Nitride
-Kevin Waters, Shiva Bhandari, Yoke Khin Yap ,Ravindra Pandey
-In Preparation
+1. Title : Stability of 3D and 2D Au Clusters on Boron Nitride
+Authors : Kevin Waters, Shiva Bhandari, Yoke Khin Yap ,Ravindra Pandey
+Location : In Preparation
+DOI : n/a
+
+2. Title : Absorption and Fluorescence Properties of Eight C4 Substituted 7-Aminocoumarins
+Authors :  Shraddha Singh, Vaho Begoyan, Marina Tanasova, Kevin Waters, Max Seel, Ravindra Pandey
+Location : Journal of Computational Chemistry, Under Review
+DOI : n/a
+
+3. Title : Dynamics of Self-Assembled Cytosine Nucleobases on Graphene
+Authors : Nabanita Saikia, Floyd Johnson, Kevin Waters, Ravindra Pandey
+Location : Nanotechnology (Accepted)
+DOI : n/a 
+
+4. Title : Stability, elastic and electronic properties of a novel BN<sub>2</sub> sheet with extended hexagons with
+N-N bonds
+Authors : Kevin Waters, Ravindra Pandey
+Locations : Journal of Physics: Condensed Matter
+DOI : [10.1088/1361-648X/aaad96] 
 
 Lagrange is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.
 
