@@ -1,14 +1,17 @@
 ---
 layout: post
-title: "Welcome to Lagrange!"
-author: "Paul Le"
+title: "List of Publications!"
+author: "Kevin Waters"
 categories: journal
 tags: [documentation,sample]
 image:
-  feature: mountains.jpg
-  credit: Death to Stock Photo
+  feature: BSA_BNNT_2.png
   creditlink: ""
 ---
+
+Stability of 3D and 2D Au Clusters on Boron Nitride
+Kevin Waters, Shiva Bhandari, Yoke Khin Yap ,Ravindra Pandey
+In Preparation
 
 Lagrange is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.
 
