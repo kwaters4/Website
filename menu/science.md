@@ -20,8 +20,8 @@ title: Science
    <strong>Location</strong> : Nanotechnology (Accepted) <br />
    <strong>DOI</strong>      : n/a 
 
-4 . <strong>Title</strong>    : Stability, elastic and electronic properties of a novel BN<sub>2</sub> sheet with extended hexagons with N-N bonds <br />
-    <strong>Authors</strong>  : Kevin Waters, Ravindra Pandey <br />
-    <strong>Location</strong> : Journal of Physics: Condensed Matter <br />
-    <strong>DOI</strong>      : [10.1088/1361-648X/aaad96](https://doi.org/10.1088/1361-648X/aaad96) <br />
+4. <strong>Title</strong>    : Stability, elastic and electronic properties of a novel BN<sub>2</sub> sheet with extended hexagons with N-N bonds <br />
+   <strong>Authors</strong>  : Kevin Waters, Ravindra Pandey <br />
+   <strong>Location</strong> : Journal of Physics: Condensed Matter <br />
+   <strong>DOI</strong>      : [10.1088/1361-648X/aaad96](https://doi.org/10.1088/1361-648X/aaad96) <br />
 
