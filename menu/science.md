@@ -18,7 +18,7 @@ title: Science
 3. <strong>Title</strong>    : Dynamics of Self-Assembled Cytosine Nucleobases on Graphene <br />
    <strong>Authors</strong>  : Nabanita Saikia, Floyd Johnson, Kevin Waters, Ravindra Pandey <br />
    <strong>Location</strong> : Nanotechnology (Accepted) <br />
-   <strong>DOI</strong>      : n/a <br />
+   <strong>DOI</strong>      : n/a 
 
 4 . <strong>Title</strong>    : Stability, elastic and electronic properties of a novel BN<sub>2</sub> sheet with extended hexagons with N-N bonds <br />
     <strong>Authors</strong>  : Kevin Waters, Ravindra Pandey <br />
