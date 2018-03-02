@@ -2,23 +2,26 @@
 layout: page
 title: Science
 ---
-<ul class="posts">
-  {% for post in site.posts %}
 
-    {% unless post.next %}
-      <h3>{{ post.date | date: '%Y' }}</h3>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-        <h3>{{ post.date | date: '%Y' }}</h3>
-      {% endif %}
-    {% endunless %}
+### Publications 
 
-    <li itemscope>
-      <a href="{{ site.github.url }}{{ post.url }}">{{ post.title }}</a>
-      <p class="post-date"><span><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%B %-d" }} - <i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</span></p>
-    </li>
+1. <strong>Title</strong>    : Stability of 3D and 2D Au Clusters on Boron Nitride <br /> 
+   <strong>Authors</strong>  : Kevin Waters, Shiva Bhandari, Yoke Khin Yap, Ravindra Pandey <br /> 
+   <strong>Location</strong> : In Preparation <br /> 
+   <strong>DOI</strong>      : n/a
 
-  {% endfor %}
-</ul>
+2. <strong>Title</strong>    : Absorption and Fluorescence Properties of Eight C4 Substituted 7-Aminocoumarins <br />
+   <strong>Authors</strong>  : Shraddha Singh, Vaho Begoyan, Marina Tanasova, Kevin Waters, Max Seel, Ravindra Pandey <br />
+   <strong>Location</strong> : Journal of Computational Chemistry, Under Review <br />
+   <strong>DOI</strong>      : n/a
+
+3. <strong>Title</strong>    : Dynamics of Self-Assembled Cytosine Nucleobases on Graphene <br />
+   <strong>Authors</strong>  : Nabanita Saikia, Floyd Johnson, Kevin Waters, Ravindra Pandey <br />
+   <strong>Location</strong> : Nanotechnology (Accepted) <br />
+   <strong>DOI</strong>      : n/a <br />
+
+4 . <strong>Title</strong>    : Stability, elastic and electronic properties of a novel BN<sub>2</sub> sheet with extended hexagons with N-N bonds <br />
+    <strong>Authors</strong>  : Kevin Waters, Ravindra Pandey <br />
+    <strong>Location</strong> : Journal of Physics: Condensed Matter <br />
+    <strong>DOI</strong>      : [10.1088/1361-648X/aaad96](https://doi.org/10.1088/1361-648X/aaad96) <br />
+
