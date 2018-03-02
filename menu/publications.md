@@ -56,4 +56,4 @@ title: Publications
 *  <strong>Title</strong>    : Building the Next Pyramid <br />
    <strong>Authors</strong>  : Joseph West, Greg Gallagher, Kevin Waters, Stephen Ward, Tia Ward <br />
    <strong>Location</strong> : arXiv 2015 <br />
-   <strong>DOI</strong>      : [arXiv:1502.07319](https://arxiv.org/abs/1502.07319)n/a <br />
+   <strong>DOI</strong>      : [arXiv:1502.07319](https://arxiv.org/abs/1502.07319)<br />
