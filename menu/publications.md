@@ -3,8 +3,6 @@ layout: page
 title: Publications
 ---
 
-### Publications 
-
 *  <strong>Title</strong>    : Stability of 3D and 2D Au Clusters on Boron Nitride <br /> 
    <strong>Authors</strong>  : Kevin Waters, Shiva Bhandari, Yoke Khin Yap, Ravindra Pandey <br /> 
    <strong>Location</strong> : In Preparation <br /> 
