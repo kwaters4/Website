@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Science
+title: Publications
 ---
 
 ### Publications 
