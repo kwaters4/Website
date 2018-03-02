@@ -10,10 +10,10 @@ image:
 ---
 ### Publications 
 
-1. Title : Stability of 3D and 2D Au Clusters on Boron Nitride
-Authors : Kevin Waters, Shiva Bhandari, Yoke Khin Yap ,Ravindra Pandey
-Location : In Preparation
-DOI : n/a
+1. <strong>Title</strong> : Stability of 3D and 2D Au Clusters on Boron Nitride <br /> 
+   <strong>Authors</strong> : Kevin Waters, Shiva Bhandari, Yoke Khin Yap ,Ravindra Pandey <br /> 
+   <strong>Location</strong> : In Preparation <br /> 
+   <strong>DOI</strong> : n/a
 
 2. Title : Absorption and Fluorescence Properties of Eight C4 Substituted 7-Aminocoumarins
 Authors :  Shraddha Singh, Vaho Begoyan, Marina Tanasova, Kevin Waters, Max Seel, Ravindra Pandey
@@ -29,7 +29,7 @@ DOI : n/a
 N-N bonds
 Authors : Kevin Waters, Ravindra Pandey
 Locations : Journal of Physics: Condensed Matter
-DOI : [10.1088/1361-648X/aaad96] 
+DOI : [10.1088/1361-648X/aaad96](https://doi.org/10.1088/1361-648X/aaad96) 
 
 Lagrange is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused blogging platform for your personal site or blog. Below you can find everything you need to get started.
 
