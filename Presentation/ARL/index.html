@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 	<head>
+    <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -21,7 +22,6 @@
     clear: both;
 }
 </style>
-
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
           <meta name="viewport" content="width=device-width">
@@ -66,7 +66,7 @@
            </p>
         </section>
 
-				<section>
+		<section>
           <div class="row">
             <div class="column">
               <h2>BN<sub>2</sub> Monolayer</h2>
@@ -75,7 +75,7 @@
                 <li>Symmetry : Amm2 (38)</li>
                 <li>Lattice Vectors </br>
                   a : 6.84 <span>&#8491;</span> </li>
-                  b : 2.55 <span>&#8491;</span> </li>	
+                  b : 2.55 <span>&#8491;</span> </li>
                 </ul>
               </div>
             <div class="column">
@@ -85,6 +85,10 @@
                 </div>
           </div>
         </section>
+        <section>
+					<svg class="temp" data-file="temp.html"></svg>
+						</div>
+ 				</section>
 
 			</div>
 		</div>
@@ -98,6 +102,8 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
   		Reveal.initialize({
 			dependencies: [
+				{ src: 'https://d3js.org/d3.v4.min.js' },
+				{ src: 'plugin/d3js/d3js.js' },
 				{ src: 'plugin/markdown/marked.js' },
 				{ src: 'plugin/markdown/markdown.js' },
 				{ src: 'plugin/notes/notes.js', async: true },
