@@ -1,8 +1,6 @@
 <!doctype html>
 <html>
 	<head>
-    <script src="http://d3js.org/d3.v4.min.js" charset="utf-8"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
     box-sizing: border-box;
@@ -24,14 +22,13 @@
 </style>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-          <meta name="viewport" content="width=device-width">
 
 		<title>ARL Postdoc Presentation</title>
-    <meta name="description" content="Post Doc Presentation">
-    <meta name="author" content="Kevin Waters">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="Post Doc Presentation">
+        <meta name="author" content="Kevin Waters">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
 		<link rel="stylesheet" href="css/reveal.css">
@@ -39,9 +36,6 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
-        <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
-        </script>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -66,6 +60,23 @@
            </p>
         </section>
 
+		<!-- Introduction -->
+        <section>
+              <h2>Overview</h2>
+ 		</section>
+		<!-- Introduction End-->
+
+		<!--    BN2   -->
+		<section>
+
+		<section>
+            <h2>Mechanical Properties of 2D Materials</h2>
+        </section>
+
+		<section>
+            <h2>BN<sub>2</sub> Monolayer</h2>
+        </section>
+
 		<section>
           <div class="row">
             <div class="column">
@@ -82,16 +93,90 @@
               <picture>
                 <img src="images/Lattice.jpg" alt="Lattice" style="width:2283px;height2834px;">
               </picture>
-                </div>
+             </div>
           </div>
         </section>
         <section>
-					<svg class="temp" data-file="temp.html"></svg>
-						</div>
- 				</section>
+            <h2>Orthorhombic Symmetry</h2>
+            <script type="math/tex; mode=display">
+            C_{IJ} =
+            \begin{bmatrix}
+            C_{11} & C_{12} & C_{13} & 0      & 0       & 0      \\
+                   & C_{22} & C_{23} & 0      & 0       & 0      \\
+                   &        & C_{33} & 0      & 0       & 0      \\
+                   &        &        & C_{44} & 0       & 0      \\
+                   &        &        &        & C_{55}  & 0      \\
+                   &        &        &        &         & C_{66} \\
+            \end{bmatrix}
+            </script>
+        </section>
+        <section>
+            <h2>Deformation Matrices</h2>
+              <div class="row">
+               <div class="column">
+                <ul>
+                    <li>-2% to 2% in steps of 0.2% (20 steps) </li>
+                    <li> Generate optimized structure (VASP) </li>
+                    <li> Apply deformation matrix to optimized structure (4*20 Monolayer, 9*20 Bilayer) </li>
+                    <li> Optimized atoms with modified unit cell </li>
+                    <li> Extract Cauchy stress data (3x3) (&sigma;<sub>ij</sub>) </li>
+                    <li> Calculate elastic constants, Young's modulus, Poisson's ratio </li>
+                </ul>
+               </div>
+               <div class="column">
+            <script type="math/tex; mode=display">
+            \boldsymbol{F_{11}} =
+            \left[
+            \begin{array}{*4{C{1em}}}
+            \lambda_{11} & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & 1 \\
+            \end{array}
+            \right] \\
+            \boldsymbol{F_{22}} =
+            \left[
+            \begin{array}{*4{C{1em}}}
+            1 & 0 & 0 \\
+            0 &\lambda_{22} & 0 \\
+            0 & 0 & 1 \\
+            \end{array}
+            \right]\\
+            \boldsymbol{F_{33}} =
+            \left[
+            \begin{array}{*4{C{1em}}}
+            1 & 0 & 0 \\
+            0 & 1 & 0 \\
+            0 & 0 & \lambda_{33} \\
+            \end{array}
+            \right]\\
+            </script>
+          </div>
+        </section>
+        </section>
 
-			</div>
-		</div>
+        </section>
+        <section>
+              <h2>Mechanical Properties of Polymers</h2>
+ 		</section>
+		<!--    BN2 end   -->
+
+		<!-- Boron Nitride Nano/Bio -->
+        <section>
+              <h2>Conjugated Boron Nitride Nanomaterials</h2>
+ 		</section>
+		<!-- Boron Nitride Nano/Bio End -->
+
+		<!-- Gold BN  -->
+        <section>
+              <h2>Gold Deposition Boron Nitride Nanomaterials</h2>
+ 		</section>
+		<!-- Gold BN End-->
+        
+		<!-- Conclusion -->
+        <section>
+              <h2>Conclusion</h2>
+ 		</section>
+		<!-- Conclusion End-->
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
@@ -101,13 +186,19 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
   		Reveal.initialize({
+            math: {
+                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                config: 'TeX-AMS_HTML-full'
+            },
 			dependencies: [
-				{ src: 'https://d3js.org/d3.v4.min.js' },
-				{ src: 'plugin/d3js/d3js.js' },
-				{ src: 'plugin/markdown/marked.js' },
-				{ src: 'plugin/markdown/markdown.js' },
-				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+//				{ src: 'https://d3js.org/d3.v4.min.js' },
+//				{ src: 'plugin/d3js/d3js.js' },
+//				{ src: 'plugin/markdown/marked.js' },
+//				{ src: 'plugin/markdown/markdown.js' },
+                { src: 'lib/js/classList.js' },
+                { src: 'plugin/math/math.js', async: true },
+//				{ src: 'plugin/notes/notes.js', async: true },
+//				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 			]
 		});
 		</script>
