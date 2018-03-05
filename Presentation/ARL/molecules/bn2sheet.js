@@ -52,6 +52,37 @@
             //defaultModel: "$dopamine",
             //console: "none", // default will be jmolApplet0_infodiv, but you can designate another div here or "none"
         }
+        var Info2 = {
+            width: 500,
+            height: 500,
+            debug: false,
+            color: "transparent",
+        //  color: "#111111",
+        //        coverImage: "1fss.png",
+        //        coverTitle: "TEST",
+        //        deferApplet: true,
+        //        deferUncover: true,
+        //  addSelectionOptions: true,
+            use: "HTML5",   // JAVA HTML5 WEBGL are all options
+            j2sPath: "plugin/jsmol/j2s", // this needs to point to where the j2s directory is.
+            jarPath: "plugin/jsmol/java",// this needs to point to where the java directory is.
+            jarFile: "JmolAppletSigned.jar",
+            isSigned: true,
+        //  script: "set antialiasDisplay; set zoomLarge true; load jsmol/data/caffeine.mol",
+            script: "set antialiasDisplay; load molecules/caffeiene.xyz; set frank off",
+        //        scr: 'test.spt',
+        //        script: "set zoomLarge true",
+        //  serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+            readyFunction: jmol_isReady,
+            disableJ2SLoadMonitor: true,
+                disableInitialConsole: true,
+                allowJavaScript: true,
+                antialiasDisplay: true,
+        //        script: "display not water",
+        //        zoomScaling: 4.0
+            //defaultModel: "$dopamine",
+            //console: "none", // default will be jmolApplet0_infodiv, but you can designate another div here or "none"
+        }
         var jmolcmds = [
         "set frank on",
         ]
@@ -60,7 +91,7 @@
         //  Jmol.getApplet("jmolApplet0", Info)
         //  $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0"))
           $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info))
-          $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info))
+          $("#appdiv2").html(Jmol.getAppletHtml("jmolApplet0", Info2))
         })
         
         var lastPrompt=0;
