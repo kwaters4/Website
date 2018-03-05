@@ -1,7 +1,7 @@
  // last update 2/18/2014 2:10:06 PM
         var jmolApplet0; // set up in HTML table, below
         // logic is set by indicating order of USE -- default is HTML5 for this test page, though
-        var s = document.location.search;
+//        var s = document.location.search;
         // Developers: The _debugCode flag is checked in j2s/core/core.z.js,
         // and, if TRUE, skips loading the core methods, forcing those
         // to be read from their individual directories. Set this
@@ -69,7 +69,7 @@
             jarFile: "JmolAppletSigned.jar",
             isSigned: true,
         //  script: "set antialiasDisplay; set zoomLarge true; load jsmol/data/caffeine.mol",
-            script: "set antialiasDisplay; load molecules/bnsheet.xyz; set frank off",
+            script: "set antialiasDisplay; load molecules/caffiene.xyz; set frank off",
         //        scr: 'test.spt',
         //        script: "set zoomLarge true",
         //  serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
