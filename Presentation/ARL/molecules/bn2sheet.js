@@ -93,7 +93,7 @@
           $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info))
         })
         $(document).ready(function() {
-          $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info2))
+          $("#appdiv2").html(Jmol.getAppletHtml("jmolApplet0", Info2))
         })
         
         var lastPrompt=0;
