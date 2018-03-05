@@ -91,6 +91,10 @@
         //  Jmol.getApplet("jmolApplet0", Info)
         //  $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0"))
           $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info))
+        })
+        $(document).ready(function() {
+        //  Jmol.getApplet("jmolApplet0", Info)
+        //  $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0"))
           $("#appdiv2").html(Jmol.getAppletHtml("jmolApplet0", Info2))
         })
         
