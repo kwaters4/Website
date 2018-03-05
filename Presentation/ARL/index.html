@@ -1,239 +1,220 @@
 <!doctype html>
 <html>
-	<head>
-<style>
-* {
-    box-sizing: border-box;
-}
 
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
+<head>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-</style>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		/* Create two equal columns that floats next to each other */
 
-		<title>ARL Postdoc Presentation</title>
-        <meta name="description" content="Post Doc Presentation">
-        <meta name="author" content="Kevin Waters">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		.column {
+			float: left;
+			width: 50%;
+			padding: 10px;
+		}
+
+		/* Clear floats after the columns */
+
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>ARL Postdoc Presentation</title>
+	<meta name="description" content="Post Doc Presentation">
+	<meta name="author" content="Kevin Waters">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/white.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css">
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
 
-        <script type="text/javascript" src="plugin/jsmol/JSmol.min.js"></script>
+	<script type="text/javascript" src="plugin/jsmol/JSmol.min.js"></script>
 
-        <script type="text/javascript" src=molecules/bn2sheet.js></script>
+	<script type="text/javascript" src=molecules/bn2sheet.js></script>
 
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
+</head>
 
-				<section>
-           <h2>An Investigation of Boron Nitride Nanomaterial Functionalization  </h2>
-           <p>
-           <small> At the Army Research Laboratory </small>
-           </p>
-           <p>
-           <small>by <a href="https://kwaters4.github.io/">Kevin Waters</a></small>
-           </p>
-        </section>
+<body>
+	<div class="reveal">
+		<div class="slides">
 
-		<!-- Introduction -->
-        <section>
-        	<h2>Overview</h2>
-          <div style="align: left; position: absolute; top: 120px; left: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999;-moz-box-shadow: 0 0 2px #888; text-align: left; line-height: 0.6;
+			<section>
+				<h2>An Investigation of Boron Nitride Nanomaterial Functionalization  </h2>
+				<p>
+					<small> At the Army Research Laboratory </small>
+				</p>
+				<p>
+					<small>by <a href="https://kwaters4.github.io/">Kevin Waters</a></small>
+				</p>
+			</section>
+
+			<!-- Introduction -->
+			<section>
+				<h2>Overview</h2>
+				<div style="align: left; position: absolute; top: 120px; left: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999;-moz-box-shadow: 0 0 2px #888; text-align: left; line-height: 0.6;
 -web<!kit-box-shadow: 2 2 5px #888; box-shadow: 0 0 5px #888;">
-            <div id="appdiv"></div>
-          </div>
-            </a>
- 					</section>
-		<!-- Introduction End-->
+					<div id="appdiv"></div>
+				</div>
+				</a>
+			</section>
+			<!-- Introduction End-->
 
-		<!--    BN2   -->
-				<section>
-
-				<section>
-            <h2>Mechanical Properties of 2D Materials</h2>
-      	</section>
+			<!--    BN2   -->
+			<section>
 
 				<section>
-            <h2>BN<sub>2</sub> Monolayer</h2>
-      	</section>
+					<h2>Mechanical Properties of 2D Materials</h2>
+				</section>
 
 				<section>
-    			<div class="row">
-        		<div class="column">
-          		<h2>BN<sub>2</sub> Monolayer</h2>
-            	<ul>
-            		<li>Atoms 2B + 4N</li>
-              	<li>Symmetry : Amm2 (38)</li>
-              	<li>Lattice Vectors </br>
-                  a : 6.84 <span>&#8491;</span> </li>
-                  b : 2.55 <span>&#8491;</span> </li>
-              	</ul>
-            	</div>
-            	<div class="column">
-            		<div style="align: right; position: absolute; top: 120px; left: 500px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999;-moz-box-shadow: 0 0 2px #888; text-align: left; line-height: 0.6;
+					<h2>BN<sub>2</sub> Monolayer</h2>
+				</section>
+
+				<section>
+					<div class="row">
+						<div class="column">
+							<h2>BN<sub>2</sub> Monolayer</h2>
+							<ul>
+								<li>Atoms 2B + 4N</li>
+								<li>Symmetry : Amm2 (38)</li>
+								<li>Lattice Vectors </br>
+									a : 6.84 <span>&#8491;</span> </li>
+								b : 2.55 <span>&#8491;</span> </li>
+							</ul>
+						</div>
+						<div class="column">
+							<div style="align: right; position: absolute; top: 120px; left: 500px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999;-moz-box-shadow: 0 0 2px #888; text-align: left; line-height: 0.6;
 -web<!kit-box-shadow: 2 2 5px #888; box-shadow: 0 0 5px #888;">
-              			<div id="appdiv2"></div>
-            	</div>
-          	</div>
-        	</section>
+								<!div id="appdiv">
+								<!/div>
+							</div>
+						</div>
+				</section>
 
-					<section>
-          	<div class="row">
-          	<div class="column">
-              	<h2>BN<sub>2</sub> Monolayer</h2>
-              	<ul>
-                	<li>Atoms 2B + 4N</li>
-                	<li>Symmetry : Amm2 (38)</li>
-                	<li>Lattice Vectors </br>
-                  	a : 6.84 <span>&#8491;</span> </li>
-                  	b : 2.55 <span>&#8491;</span> </li>
-                	</ul>
-            	</div>
-            	<div class="column">
-              	<picture>
-                	<img src="images/Lattice.jpg" alt="Lattice" style="width:2283px;height2834px;">
-              	</picture>
-             	</div>
-          	</div>
-        	</section>
+				<section>
+					<div class="row">
+						<div class="column">
+							<h2>BN<sub>2</sub> Monolayer</h2>
+							<ul>
+								<li>Atoms 2B + 4N</li>
+								<li>Symmetry : Amm2 (38)</li>
+								<li>Lattice Vectors </br>
+									a : 6.84 <span>&#8491;</span> </li>
+								b : 2.55 <span>&#8491;</span> </li>
+							</ul>
+						</div>
+						<div class="column">
+							<picture>
+								<img src="images/Lattice.jpg" alt="Lattice" style="width:2283px;height2834px;">
+							</picture>
+						</div>
+					</div>
+				</section>
 
-        	<section>
-            	<h2>Orthorhombic Symmetry</h2>
-            	<script type="math/tex; mode=display">
-            	C_{IJ} =
-            	\begin{bmatrix}
-            	C_{11} & C_{12} & C_{13} & 0      & 0       & 0      \\
-                   	& C_{22} & C_{23} & 0      & 0       & 0      \\
-                   	&        & C_{33} & 0      & 0       & 0      \\
-                   	&        &        & C_{44} & 0       & 0      \\
-                   	&        &        &        & C_{55}  & 0      \\
-                   	&        &        &        &         & C_{66} \\
-            	\end{bmatrix}
-            	</script>
-        	</section>
-        	<section>
-            	<h2>Deformation Matrices</h2>
-              	<div class="row">
-               	<div class="column">
-                	<ul>
-                    	<li>-2% to 2% in steps of 0.2% (20 steps) </li>
-                    	<li> Generate optimized structure (VASP) </li>
-                    	<li> Apply deformation matrix to optimized structure (4*20 Monolayer, 9*20 Bilayer) </li>
-                    	<li> Optimized atoms with modified unit cell </li>
-                    	<li> Extract Cauchy stress data (3x3) (&sigma;<sub>ij</sub>) </li>
-                    	<li> Calculate elastic constants, Young's modulus, Poisson's ratio </li>
-                	</ul>
-               	</div>
-               	<div class="column">
-            	<script type="math/tex; mode=display">
-            	\boldsymbol{F_{11}} =
-            	\left[
-            	\begin{array}{*4{C{1em}}}
-            	\lambda_{11} & 0 & 0 \\
-            	0 & 1 & 0 \\
-            	0 & 0 & 1 \\
-            	\end{array}
-            	\right] \\
-            	\boldsymbol{F_{22}} =
-            	\left[
-            	\begin{array}{*4{C{1em}}}
-            	1 & 0 & 0 \\
-            	0 &\lambda_{22} & 0 \\
-            	0 & 0 & 1 \\
-            	\end{array}
-            	\right]\\
-            	\boldsymbol{F_{33}} =
-            	\left[
-            	\begin{array}{*4{C{1em}}}
-            	1 & 0 & 0 \\
-            	0 & 1 & 0 \\
-            	0 & 0 & \lambda_{33} \\
-            	\end{array}
-            	\right]\\
-            	</script>
-          	</div>
-        	</section>
-        </section>
+				<section>
+					<h2>Orthorhombic Symmetry</h2>
+					<script type="math/tex; mode=display">
+						C_{IJ} = \begin{bmatrix} C_{11} & C_{12} & C_{13} & 0 & 0 & 0 \\ & C_{22} & C_{23} & 0 & 0 & 0 \\ & & C_{33} & 0 & 0 & 0 \\ & & & C_{44} & 0 & 0 \\ & & & & C_{55} & 0 \\ & & & & & C_{66} \\ \end{bmatrix}
+					</script>
+				</section>
+				<section>
+					<h2>Deformation Matrices</h2>
+					<div class="row">
+						<div class="column">
+							<ul>
+								<li>-2% to 2% in steps of 0.2% (20 steps) </li>
+								<li> Generate optimized structure (VASP) </li>
+								<li> Apply deformation matrix to optimized structure (4*20 Monolayer, 9*20 Bilayer) </li>
+								<li> Optimized atoms with modified unit cell </li>
+								<li> Extract Cauchy stress data (3x3) (&sigma;<sub>ij</sub>) </li>
+								<li> Calculate elastic constants, Young's modulus, Poisson's ratio </li>
+							</ul>
+						</div>
+						<div class="column">
+							<script type="math/tex; mode=display">
+								\boldsymbol{F_{11}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{11} & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{array} \right] \\ \boldsymbol{F_{22}} = \left[ \begin{array}{*4{C{1em}}} 1 & 0 & 0 \\ 0 &\lambda_{22} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\
+								\boldsymbol{F_{33}} = \left[ \begin{array}{*4{C{1em}}} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & \lambda_{33} \\ \end{array} \right]\\
+							</script>
+						</div>
+				</section>
+			</section>
 
-        </section>
-        <section>
-              <h2>Mechanical Properties of Polymers</h2>
- 				</section>
-		<!--    BN2 end   -->
+			</section>
+			<section>
+				<h2>Mechanical Properties of Polymers</h2>
+			</section>
+			<!--    BN2 end   -->
 
-		<!-- Boron Nitride Nano/Bio -->
-        <section>
-              <h2>Conjugated Boron Nitride Nanomaterials</h2>
- 		</section>
-		<!-- Boron Nitride Nano/Bio End -->
+			<!-- Boron Nitride Nano/Bio -->
+			<section>
+				<h2>Conjugated Boron Nitride Nanomaterials</h2>
+			</section>
+			<!-- Boron Nitride Nano/Bio End -->
 
-		<!-- Gold BN  -->
-        <section>
-              <h2>Gold Deposition Boron Nitride Nanomaterials</h2>
- 		</section>
-		<!-- Gold BN End-->
+			<!-- Gold BN  -->
+			<section>
+				<h2>Gold Deposition Boron Nitride Nanomaterials</h2>
+			</section>
+			<!-- Gold BN End-->
 
-		<!-- Conclusion -->
-        <section>
-              <h2>Conclusion</h2>
- 		</section>
-		<!-- Conclusion End-->
+			<!-- Conclusion -->
+			<section>
+				<h2>Conclusion</h2>
+			</section>
+			<!-- Conclusion End-->
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+			<script src="lib/js/head.min.js"></script>
+			<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-  		Reveal.initialize({
-            math: {
-                // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
-                config: 'TeX-AMS_HTML-full'
-            },
-			dependencies: [
-//				{ src: 'https://d3js.org/d3.v4.min.js' },
-//				{ src: 'plugin/d3js/d3js.js' },
-//				{ src: 'plugin/markdown/marked.js' },
-//				{ src: 'plugin/markdown/markdown.js' },
-                { src: 'lib/js/classList.js' },
-                { src: 'plugin/math/math.js', async: true },
-//				{ src: 'plugin/notes/notes.js', async: true },
-//				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-			]
-		});
-		</script>
+			<script>
+				// More info about config & dependencies:
+				// - https://github.com/hakimel/reveal.js#configuration
+				// - https://github.com/hakimel/reveal.js#dependencies
+				Reveal.initialize({
+					math: {
+						// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+						config: 'TeX-AMS_HTML-full'
+					},
+					dependencies: [
+						//				{ src: 'https://d3js.org/d3.v4.min.js' },
+						//				{ src: 'plugin/d3js/d3js.js' },
+						//				{ src: 'plugin/markdown/marked.js' },
+						//				{ src: 'plugin/markdown/markdown.js' },
+						{
+							src: 'lib/js/classList.js'
+						},
+						{
+							src: 'plugin/math/math.js',
+							async: true
+						},
+						//				{ src: 'plugin/notes/notes.js', async: true },
+						//				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					]
+				});
+			</script>
 
 
-	</body>
+</body>
+
 </html>
