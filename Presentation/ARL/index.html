@@ -67,131 +67,131 @@
 
 		<!-- Introduction -->
         <section>
-              <h2>Overview</h2>
-              <div style="align: left; position: absolute; top: 120px; left: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999;-moz-box-shadow: 0 0 2px #888; text-align: left; line-height: 0.6;
+        	<h2>Overview</h2>
+          <div style="align: left; position: absolute; top: 120px; left: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999;-moz-box-shadow: 0 0 2px #888; text-align: left; line-height: 0.6;
 -web<!kit-box-shadow: 2 2 5px #888; box-shadow: 0 0 5px #888;">
-                <a href="javascript:Jmol.script(jmolApplet0)">
-                <div id="appdiv"></div>
-              </div>
-                </a>
- 		</section>
+          	<a href="javascript:Jmol.script(jmolApplet0)">
+            <div id="appdiv"></div>
+          </div>
+            </a>
+ 					</section>
 		<!-- Introduction End-->
 
 		<!--    BN2   -->
-		<section>
+				<section>
 
-		<section>
+				<section>
             <h2>Mechanical Properties of 2D Materials</h2>
-        </section>
+      	</section>
 
-		<section>
+				<section>
             <h2>BN<sub>2</sub> Monolayer</h2>
-        </section>
+      	</section>
 
-		<section>
-          <div class="row">
-            <div class="column">
-              <h2>BN<sub>2</sub> Monolayer</h2>
-              <ul>
-                <li>Atoms 2B + 4N</li>
-                <li>Symmetry : Amm2 (38)</li>
-                <li>Lattice Vectors </br>
+				<section>
+    			<div class="row">
+        		<div class="column">
+          		<h2>BN<sub>2</sub> Monolayer</h2>
+            	<ul>
+            		<li>Atoms 2B + 4N</li>
+              	<li>Symmetry : Amm2 (38)</li>
+              	<li>Lattice Vectors </br>
                   a : 6.84 <span>&#8491;</span> </li>
                   b : 2.55 <span>&#8491;</span> </li>
-                </ul>
-              </div>
-            <div class="column">
-              <div style="align: left; position: absolute; top: 120px; left: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999;-moz-box-shadow: 0 0 2px #888; text-align: left; line-height: 0.6;
+              	</ul>
+            	</div>
+            	<div class="column">
+            		<div style="align: left; position: absolute; top: 120px; left: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999;-moz-box-shadow: 0 0 2px #888; text-align: left; line-height: 0.6;
 -web<!kit-box-shadow: 2 2 5px #888; box-shadow: 0 0 5px #888;">
-                <a href="javascript:Jmol.script(jmolApplet0)">
-                <div id="appdiv"></div>
-                </a>
-             </div>
-          </div>
-          </div>
-        </section>
+            			<a href="javascript:Jmol.script(jmolApplet0)">
+              			<div id="appdiv"></div>
+              		</a>
+            	</div>
+          	</div>
+        	</section>
 
-		<section>
-          <div class="row">
-            <div class="column">
-              <h2>BN<sub>2</sub> Monolayer</h2>
-              <ul>
-                <li>Atoms 2B + 4N</li>
-                <li>Symmetry : Amm2 (38)</li>
-                <li>Lattice Vectors </br>
-                  a : 6.84 <span>&#8491;</span> </li>
-                  b : 2.55 <span>&#8491;</span> </li>
-                </ul>
-              </div>
-            <div class="column">
-              <picture>
-                <img src="images/Lattice.jpg" alt="Lattice" style="width:2283px;height2834px;">
-              </picture>
-             </div>
-          </div>
-        </section>
-        <section>
-            <h2>Orthorhombic Symmetry</h2>
-            <script type="math/tex; mode=display">
-            C_{IJ} =
-            \begin{bmatrix}
-            C_{11} & C_{12} & C_{13} & 0      & 0       & 0      \\
-                   & C_{22} & C_{23} & 0      & 0       & 0      \\
-                   &        & C_{33} & 0      & 0       & 0      \\
-                   &        &        & C_{44} & 0       & 0      \\
-                   &        &        &        & C_{55}  & 0      \\
-                   &        &        &        &         & C_{66} \\
-            \end{bmatrix}
-            </script>
-        </section>
-        <section>
-            <h2>Deformation Matrices</h2>
-              <div class="row">
-               <div class="column">
-                <ul>
-                    <li>-2% to 2% in steps of 0.2% (20 steps) </li>
-                    <li> Generate optimized structure (VASP) </li>
-                    <li> Apply deformation matrix to optimized structure (4*20 Monolayer, 9*20 Bilayer) </li>
-                    <li> Optimized atoms with modified unit cell </li>
-                    <li> Extract Cauchy stress data (3x3) (&sigma;<sub>ij</sub>) </li>
-                    <li> Calculate elastic constants, Young's modulus, Poisson's ratio </li>
-                </ul>
-               </div>
-               <div class="column">
-            <script type="math/tex; mode=display">
-            \boldsymbol{F_{11}} =
-            \left[
-            \begin{array}{*4{C{1em}}}
-            \lambda_{11} & 0 & 0 \\
-            0 & 1 & 0 \\
-            0 & 0 & 1 \\
-            \end{array}
-            \right] \\
-            \boldsymbol{F_{22}} =
-            \left[
-            \begin{array}{*4{C{1em}}}
-            1 & 0 & 0 \\
-            0 &\lambda_{22} & 0 \\
-            0 & 0 & 1 \\
-            \end{array}
-            \right]\\
-            \boldsymbol{F_{33}} =
-            \left[
-            \begin{array}{*4{C{1em}}}
-            1 & 0 & 0 \\
-            0 & 1 & 0 \\
-            0 & 0 & \lambda_{33} \\
-            \end{array}
-            \right]\\
-            </script>
-          </div>
-        </section>
+					<section>
+          	<div class="row">
+          	<div class="column">
+              	<h2>BN<sub>2</sub> Monolayer</h2>
+              	<ul>
+                	<li>Atoms 2B + 4N</li>
+                	<li>Symmetry : Amm2 (38)</li>
+                	<li>Lattice Vectors </br>
+                  	a : 6.84 <span>&#8491;</span> </li>
+                  	b : 2.55 <span>&#8491;</span> </li>
+                	</ul>
+            	</div>
+            	<div class="column">
+              	<picture>
+                	<img src="images/Lattice.jpg" alt="Lattice" style="width:2283px;height2834px;">
+              	</picture>
+             	</div>
+          	</div>
+        	</section>
+
+        	<section>
+            	<h2>Orthorhombic Symmetry</h2>
+            	<script type="math/tex; mode=display">
+            	C_{IJ} =
+            	\begin{bmatrix}
+            	C_{11} & C_{12} & C_{13} & 0      & 0       & 0      \\
+                   	& C_{22} & C_{23} & 0      & 0       & 0      \\
+                   	&        & C_{33} & 0      & 0       & 0      \\
+                   	&        &        & C_{44} & 0       & 0      \\
+                   	&        &        &        & C_{55}  & 0      \\
+                   	&        &        &        &         & C_{66} \\
+            	\end{bmatrix}
+            	</script>
+        	</section>
+        	<section>
+            	<h2>Deformation Matrices</h2>
+              	<div class="row">
+               	<div class="column">
+                	<ul>
+                    	<li>-2% to 2% in steps of 0.2% (20 steps) </li>
+                    	<li> Generate optimized structure (VASP) </li>
+                    	<li> Apply deformation matrix to optimized structure (4*20 Monolayer, 9*20 Bilayer) </li>
+                    	<li> Optimized atoms with modified unit cell </li>
+                    	<li> Extract Cauchy stress data (3x3) (&sigma;<sub>ij</sub>) </li>
+                    	<li> Calculate elastic constants, Young's modulus, Poisson's ratio </li>
+                	</ul>
+               	</div>
+               	<div class="column">
+            	<script type="math/tex; mode=display">
+            	\boldsymbol{F_{11}} =
+            	\left[
+            	\begin{array}{*4{C{1em}}}
+            	\lambda_{11} & 0 & 0 \\
+            	0 & 1 & 0 \\
+            	0 & 0 & 1 \\
+            	\end{array}
+            	\right] \\
+            	\boldsymbol{F_{22}} =
+            	\left[
+            	\begin{array}{*4{C{1em}}}
+            	1 & 0 & 0 \\
+            	0 &\lambda_{22} & 0 \\
+            	0 & 0 & 1 \\
+            	\end{array}
+            	\right]\\
+            	\boldsymbol{F_{33}} =
+            	\left[
+            	\begin{array}{*4{C{1em}}}
+            	1 & 0 & 0 \\
+            	0 & 1 & 0 \\
+            	0 & 0 & \lambda_{33} \\
+            	\end{array}
+            	\right]\\
+            	</script>
+          	</div>
+        	</section>
         </section>
 
         </section>
         <section>
               <h2>Mechanical Properties of Polymers</h2>
- 		</section>
+ 				</section>
 		<!--    BN2 end   -->
 
 		<!-- Boron Nitride Nano/Bio -->
@@ -205,7 +205,7 @@
               <h2>Gold Deposition Boron Nitride Nanomaterials</h2>
  		</section>
 		<!-- Gold BN End-->
-        
+
 		<!-- Conclusion -->
         <section>
               <h2>Conclusion</h2>
