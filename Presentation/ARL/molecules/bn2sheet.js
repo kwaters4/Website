@@ -60,7 +60,7 @@
         //  Jmol.getApplet("jmolApplet0", Info)
         //  $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0"))
           $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info))
-          $("#appdiv1").html(Jmol.getAppletHtml("jmolApplet0", Info))
+          $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info))
         })
         
         var lastPrompt=0;
