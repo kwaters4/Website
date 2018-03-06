@@ -1,5 +1,6 @@
  // last update 2/18/2014 2:10:06 PM
         var jmolApplet0; // set up in HTML table, below
+        var jmolApplet1; // set up in HTML table, below
         // logic is set by indicating order of USE -- default is HTML5 for this test page, though
         var s = document.location.search;
         // Developers: The _debugCode flag is checked in j2s/core/core.z.js,
@@ -91,7 +92,7 @@
         //  Jmol.getApplet("jmolApplet0", Info)
         //  $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0"))
           $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info))
-//          $("#appdiv2").html(Jmol.getAppletHtml("jmolApplet0", Info2))
+          $("#appdiv2").html(Jmol.getAppletHtml("jmolApplet1", Info2))
         })
         
         var lastPrompt=0;
