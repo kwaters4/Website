@@ -58,6 +58,7 @@
             height: 500,
             debug: false,
             color: "transparent",
+            background: "#ffffff"  
         //  color: "#111111",
         //        coverImage: "1fss.png",
         //        coverTitle: "TEST",
