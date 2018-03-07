@@ -27,6 +27,7 @@
             height: 500,
             debug: false,
             color: "transparent",
+            backgroundColor: "#ffffff",
         //  color: "#111111",
         //        coverImage: "1fss.png",
         //        coverTitle: "TEST",
@@ -58,7 +59,7 @@
             height: 500,
             debug: false,
             color: "transparent",
-            background: "#ffffff"  
+            backgroundColor: "#ffffff",
         //  color: "#111111",
         //        coverImage: "1fss.png",
         //        coverTitle: "TEST",
