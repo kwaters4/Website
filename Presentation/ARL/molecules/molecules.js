@@ -22,7 +22,6 @@
         //$("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info))
         //}
         
-        
         var Info = {
             width: 500,
             height: 500,
@@ -40,7 +39,7 @@
             jarFile: "JmolAppletSigned.jar",
             isSigned: true,
         //  script: "set antialiasDisplay; set zoomLarge true; load jsmol/data/caffeine.mol",
-            script: "background white; set antialiasDisplay; load molecules/goldbn.xyz; set frank off",
+            script: "background white; set antialiasDisplay; load molecules/3v03.pdb; set frank off; Cartoon On",
         //        scr: 'test.spt',
         //        script: "set zoomLarge true",
         //  serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
@@ -98,7 +97,7 @@
             jarFile: "JmolAppletSigned.jar",
             isSigned: true,
         //  script: "set antialiasDisplay; set zoomLarge true; load jsmol/data/caffeine.mol",
-            script: "background white; set antialiasDisplay; load molecules/3v03.pdb; set frank off; Cartoon On",
+            script: "background white; set antialiasDisplay; load molecules/goldbn.xyz; set frank off",
         //        scr: 'test.spt',
         //        script: "set zoomLarge true",
         //  serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
@@ -119,9 +118,9 @@
         $(document).ready(function() {
         //  Jmol.getApplet("jmolApplet0", Info)
         //  $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0"))
-          $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0", Info))
+          $("#appdiv1").html(Jmol.getAppletHtml("jmolApplet0", Info))
           $("#appdiv2").html(Jmol.getAppletHtml("jmolApplet1", Info2))
-          $("#appdiv3").html(Jmol.getAppletHtml("jmolApplet2", Info2))
+          $("#appdiv3").html(Jmol.getAppletHtml("jmolApplet2", Info3))
         })
         
         var lastPrompt=0;
