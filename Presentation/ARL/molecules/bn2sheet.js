@@ -69,11 +69,7 @@
             jarPath: "plugin/jsmol/java",// this needs to point to where the java directory is.
             jarFile: "JmolAppletSigned.jar",
             isSigned: true,
-        //  script: "set antialiasDisplay; set zoomLarge true; load jsmol/data/caffeine.mol",
-            script: "background white; set antialiasDisplay; load molecules/bnsheet.xyz; set frank off",
-        //        scr: 'test.spt',
-        //        script: "set zoomLarge true",
-        //  serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+            script: "set antialiasDisplay; load molecules/bnsheet.xyz; set frank off; background white",
             readyFunction: jmol_isReady,
             disableJ2SLoadMonitor: true,
                 disableInitialConsole: true,
