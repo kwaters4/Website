@@ -15,8 +15,9 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  font-size: 42px;
+/*  font-family: "Source Sans Pro", Helvetica, sans-serif;*/
+  font-family: 'Helvetica Neue', 'Lucida Grande', Helvetica, Arial, Verdana, sans-serif;;
+  font-size: 28px;
   font-weight: normal;
   color: #222; }
 
@@ -83,6 +84,12 @@ body {
   max-width: 95%;
   max-height: 95%; }
 
+.reveal slideheader {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:1024px; }
+
 .reveal strong,
 .reveal b {
   font-weight: bold; }
@@ -95,6 +102,7 @@ body {
 .reveal ul {
   display: inline-block;
   text-align: left;
+  line-height:42px;
   margin: 0 0 0 1em; }
 
 .reveal ol {

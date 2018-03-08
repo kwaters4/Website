@@ -12,7 +12,7 @@
 		.column {
 			float: left;
 			width: 50%;
-			padding: 10px;
+			padding: 5px;
 		}
 
 		/* Clear floats after the columns */
@@ -74,7 +74,7 @@
 				<h2>Overview</h2>
 				<div style="align: left; position: absolute; top: 120px; left: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999; text-align: left; line-height: 0.6;">
 					<div id="appdiv1"></div>
- 				</div>
+				</div>
 			</section>
 			<!-- Introduction End-->
 
@@ -97,54 +97,40 @@
 								<li>Atoms 2B + 4N</li>
 								<li>Symmetry : Amm2 (38)</li>
 								<li>Lattice Vectors </br>
-									a : 6.84 <span>&#8491;</span> </li>
-									b : 2.55 <span>&#8491;</span> </li>
+									<ul>
+										<li>a : 6.84 <span>&#8491;</span> </li>
+										<li>b : 2.55 <span>&#8491;</span> </li>
+									</ul>
 							</ul>
 						</div>
 						<div class="column">
-							<div style="align: left; position: absolute; top: 120px; left: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999; text-align: left; line-height: 0.6;">
+							<div style="align: left; position: absolute; top: 120px; right: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999; text-align: left; line-height: 0.6;">
 								<div id="appdiv2"></div>
 							</div>
 						</div>
 				</section>
 
 				<section>
-					<div class="row">
-						<div class="column">
-							<h2>BN<sub>2</sub> Monolayer</h2>
-							<ul>
-								<li>Atoms 2B + 4N</li>
-								<li>Symmetry : Amm2 (38)</li>
-								<li>Lattice Vectors </br>
-									a : 6.84 <span>&#8491;</span> </li>
-								b : 2.55 <span>&#8491;</span> </li>
-							</ul>
-						</div>
-						<div class="column">
-							<picture>
-								<img src="images/Lattice.jpg" alt="Lattice" style="width:2283px;height2834px;">
-							</picture>
-						</div>
+					<div id="slideheader">
+						<h2>Orthorhombic Symmetry</h2>
 					</div>
-				</section>
-
-				<section>
-					<h2>Orthorhombic Symmetry</h2>
 					<script type="math/tex; mode=display">
 						C_{IJ} = \begin{bmatrix} C_{11} & C_{12} & C_{13} & 0 & 0 & 0 \\ & C_{22} & C_{23} & 0 & 0 & 0 \\ & & C_{33} & 0 & 0 & 0 \\ & & & C_{44} & 0 & 0 \\ & & & & C_{55} & 0 \\ & & & & & C_{66} \\ \end{bmatrix}
 					</script>
 				</section>
 				<section>
-					<h2>Deformation Matrices</h2>
+					<div id="slideheader">
+						<h2>Deformation Matrices</h2>
+					</div>
 					<div class="row">
 						<div class="column">
 							<ul>
-								<li>-2% to 2% in steps of 0.2% (20 steps) </li>
-								<li> Generate optimized structure (VASP) </li>
-								<li> Apply deformation matrix to optimized structure (4*20 Monolayer, 9*20 Bilayer) </li>
+								<li>-2% to 2% in steps of 0.2% </li>
+								<li> Generate optimized structure </li>
+								<li> Apply deformation matrix to optimized structure </li>
 								<li> Optimized atoms with modified unit cell </li>
-								<li> Extract Cauchy stress data (3x3) (&sigma;<sub>ij</sub>) </li>
-								<li> Calculate elastic constants, Young's modulus, Poisson's ratio </li>
+								<li> Extract Cauchy stress data (&sigma;<sub>ij</sub>) </li>
+								<li> Calculate mechanical properties of interest </li>
 							</ul>
 						</div>
 						<div class="column">
@@ -153,8 +139,112 @@
 								\boldsymbol{F_{33}} = \left[ \begin{array}{*4{C{1em}}} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & \lambda_{33} \\ \end{array} \right]\\
 							</script>
 						</div>
+					</div>
+				</section>
+				<section>
+					<div id="slideheader">
+						<h2>Results</h2>
+						<table>
+							<thead>
+								<tr >
+									<th> </th>
+									<th>Graphene<sup>1</sup></th>
+									<th>This Work</th>
+									<th>BN<sup>2</sup></th>
+									<th>This Work</th>
+									<th>BN<sub>2</sub></th>
+									<th>Bilayer</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr >
+									<td>C<sub>11</sub> </td>
+									<td align ="right" >358.1 </td>
+									<td align ="right" >353.7 </td>
+									<td align ="right" >293.2 </td>
+									<td align ="right" >290.5 </td>
+									<td align ="right" >368.8</td>
+									<td align ="right" >357.7 </td>
+								</tr>
+								<tr align="right">
+									<td>C<sub>12</sub> </td>
+									<td align = "right" >60.4 </td>
+									<td align = "right" >61.7 </td>
+									<td align = "right" >66.1 </td>
+									<td align = "right" >64.4 </td>
+									<td align = "right" >47.2</td>
+									<td align = "right" >45.5 </td>
+								</tr>
+								<tr align="right">
+									<td>C<sub>13</sub> </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" >-5.2 </td>
+								</tr>
+								<tr align="right">
+									<td>C<sub>22</sub> </td>
+									<td align = "right"> </td>
+									<td align = "right"> </td>
+									<td align = "right"> </td>
+									<td align = "right"> </td>
+									<td align = "right">153.3</td>
+									<td align = "right">107.3</td>
+								</tr>
+								<tr align="right">
+									<td>C<sub>33</sub> </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" >-22.7 </td>
+								</tr>
+								<tr align="right">
+									<td>C<sub>33</sub> </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" >5.0</td>
+								</tr>
+								<tr align="right">
+									<td>C<sub>44</sub> </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" >0.4</td>
+								</tr>
+								<tr align="right">
+									<td>C<sub>55</sub> </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" > </td>
+									<td align = "right" >0.4</td>
+								</tr>
+								<tr align="right">
+									<td>C<sub>66</sub> </td>
+									<td align = "right" > </td>
+									<td align = "right" >144.9 </td>
+									<td align = "right" > </td>
+									<td align = "right" >113.1</td>
+									<td align = "right" >58.7</td>
+									<td align = "right" >50.2</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					The elastic constants ($C_{xx}$) and in-plane Young's modulus ($E_{arm/zig}$) are all given in N/m Wei2009, Peng2012
 				</section>
 			</section>
+
 
 			</section>
 			<section>
@@ -171,7 +261,7 @@
 			<!-- Gold BN  -->
 			<section>
 				<h2>Gold Deposition Boron Nitride Nanomaterials</h2>
-					<div id="appdiv3"></div>
+				<div id="appdiv3"></div>
 			</section>
 			<!-- Gold BN End-->
 
