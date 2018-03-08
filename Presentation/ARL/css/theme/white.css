@@ -67,6 +67,13 @@ body {
 .reveal h4 {
   font-size: 1em; }
 
+.reveal h5 {
+  font-size: 14px; }
+
+.reveal fsize {
+  font-size: 14px; 
+  font-style: italic; }
+
 .reveal h1 {
   text-shadow: none; }
 
@@ -90,12 +97,22 @@ body {
   left: 0px;
   width:1024px; }
 
+.reveal footer {
+  position: absolute;
+  left: 35%;
+  bottom: 1em;
+  font-size: 14px; }
+
 .reveal strong,
 .reveal b {
   font-weight: bold; }
 
 .reveal em {
   font-style: italic; }
+
+.reveal fl {
+  font-style: italic;
+  list-style-type: decimal; }
 
 .reveal ol,
 .reveal dl,
