@@ -74,7 +74,7 @@
 				<div id="slideheader">
 					<h2>Overview</h2>
 				</div>
-				<div style="align: center; position: absolute; top: 120px; left: 150px; height: 2500px; width: 2500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999; text-align: left; line-height: 0.6;">
+				<div style="align: center; position: absolute; top: 120px; left: 150px; height: 5000px; width: 5000px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999; text-align: left; line-height: 0.6;">
 					<div id="appdiv1"></div>
 				</div>
 			</section>
@@ -176,8 +176,16 @@
 					<div id="slideheader">
 						<h2>Deformation Matrices</h2>
 					</div>
-					<div class="row">
-						<div class="column">
+							<script type="math/tex; mode=display">
+								\boldsymbol{F_{11}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{11} & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{array} \right] \\ \boldsymbol{F_{22}} = \left[ \begin{array}{*4{C{1em}}} 1 & 0 & 0 \\ 0 &\lambda_{22} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\
+								\boldsymbol{F_{66}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{66} & 0 & 0 \\ 0 & \lambda_{66} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\ \boldsymbol{F_{12}} = \left[ \begin{array}{*4{C{1em}}} 1 & \epsilon_{12} & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array}\right]\\
+							</script>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Workflow</h2>
+					</div>
 							<ul>
 								<li>-2% to 2% in steps of 0.2% </li>
 								<li> Generate optimized structure </li>
@@ -186,14 +194,6 @@
 								<li> Extract Cauchy stress data (&sigma;<sub>ij</sub>) </li>
 								<li> Calculate mechanical properties of interest </li>
 							</ul>
-						</div>
-						<div class="column">
-							<script type="math/tex; mode=display">
-								\boldsymbol{F_{11}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{11} & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{array} \right] \\ \boldsymbol{F_{22}} = \left[ \begin{array}{*4{C{1em}}} 1 & 0 & 0 \\ 0 &\lambda_{22} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\
-								\boldsymbol{F_{66}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{66} & 0 & 0 \\ 0 & \lambda_{66} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\ \boldsymbol{F_{12}} = \left[ \begin{array}{*4{C{1em}}} 1 & \epsilon_{12} & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array}\right]\\
-							</script>
-						</div>
-					</div>
 				</section>
 
 				<section>
