@@ -71,12 +71,51 @@
 
 			<!-- Introduction -->
 			<section>
-				<div id="slideheader">
-					<h2>Overview</h2>
-				</div>
-				<div style="align: center; position: absolute; top: 120px; left: 150px; height: 5000px; width: 5000px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999; text-align: left; line-height: 0.6;">
-					<div id="appdiv1"></div>
-				</div>
+				<section>
+					<div id="slideheader">
+						<h2>Overview</h2>
+					</div>
+					<div style="align: center; position: absolute; top: 120px; left: 150px; height: 5000px; width: 5000px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999; text-align: left; line-height: 0.6;">
+						<div id="appdiv1"></div>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Method of Approach</h2>
+					</div>
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>Computation Scaling</h2>
+					</div>
+					Image of Scaling with size and time Modeling electrons to atoms, to segments Finitie Element
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Modeling Electrons</h2>
+					</div>
+					<ul>
+						<li>Schr&ouml;dinger Equation</li>
+						<li>Exchange Interactions</li>
+						<li>Probabilistic Nature</li>
+					</ul>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Computation Resolution</h2>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>High Performance Computing (HPC)</h2>
+					</div>
+				</section>
 			</section>
 			<!-- Introduction End-->
 
@@ -89,9 +128,9 @@
 				</section>
 
 				<section>
-				<div id="slideheader">
-					<h2> Chemical Functionalization </h2>
-				</div>
+					<div id="slideheader">
+						<h2> Chemical Functionalization </h2>
+					</div>
 				</section>
 
 				<section>
@@ -176,24 +215,24 @@
 					<div id="slideheader">
 						<h2>Deformation Matrices</h2>
 					</div>
-							<script type="math/tex; mode=display">
-								\boldsymbol{F_{11}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{11} & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{array} \right] \\ \boldsymbol{F_{22}} = \left[ \begin{array}{*4{C{1em}}} 1 & 0 & 0 \\ 0 &\lambda_{22} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\
-								\boldsymbol{F_{66}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{66} & 0 & 0 \\ 0 & \lambda_{66} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\ \boldsymbol{F_{12}} = \left[ \begin{array}{*4{C{1em}}} 1 & \epsilon_{12} & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array}\right]\\
-							</script>
+					<script type="math/tex; mode=display">
+						\boldsymbol{F_{11}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{11} & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{array} \right] \\ \boldsymbol{F_{22}} = \left[ \begin{array}{*4{C{1em}}} 1 & 0 & 0 \\ 0 &\lambda_{22} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\
+						\boldsymbol{F_{66}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{66} & 0 & 0 \\ 0 & \lambda_{66} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\ \boldsymbol{F_{12}} = \left[ \begin{array}{*4{C{1em}}} 1 & \epsilon_{12} & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array}\right]\\
+					</script>
 				</section>
 
 				<section>
 					<div id="slideheader">
 						<h2>Workflow</h2>
 					</div>
-							<ul>
-								<li>-2% to 2% in steps of 0.2% </li>
-								<li> Generate optimized structure </li>
-								<li> Apply deformation matrix to optimized structure </li>
-								<li> Optimized atoms with modified unit cell </li>
-								<li> Extract Cauchy stress data (&sigma;<sub>ij</sub>) </li>
-								<li> Calculate mechanical properties of interest </li>
-							</ul>
+					<ul>
+						<li>-2% to 2% in steps of 0.2% </li>
+						<li> Generate optimized structure </li>
+						<li> Apply deformation matrix to optimized structure </li>
+						<li> Optimized atoms with modified unit cell </li>
+						<li> Extract Cauchy stress data (&sigma;<sub>ij</sub>) </li>
+						<li> Calculate mechanical properties of interest </li>
+					</ul>
 				</section>
 
 				<section>
@@ -201,8 +240,7 @@
 						<h2>Properties Derived from Elastic Constants</h2>
 					</div>
 					<script type="math/tex; mode=display">
-						E_{arm} = \frac{C_{11}C_{22} - C_{12}C_{12}}{C_{11}} \\
-						E_{zig} = \frac{C_{11}C_{22} - C_{12}C_{12}}{C_{22}}
+						E_{arm} = \frac{C_{11}C_{22} - C_{12}C_{12}}{C_{11}} \\ E_{zig} = \frac{C_{11}C_{22} - C_{12}C_{12}}{C_{22}}
 					</script>
 				</section>
 
@@ -210,52 +248,52 @@
 					<div id="slideheader">
 						<h2>Results</h2>
 					</div>
-						<table>
-							<thead>
-								<tr>
-									<th align="center">N/m</th>
-									<th align="center">Graphene<sup><fsize>1</fsize></sup></th>
-									<th align="center">This Work</th>
-									<th align="center">BN<sup><fsize>2</fsize></sup></th>
-									<th align="center">This Work</th>
-									<th align="center">BN<sub>2</sub></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>C<sub>11</sub> </td>
-									<td align="right">358.1 </td>
-									<td align="right">353.7 </td>
-									<td align="right">293.2 </td>
-									<td align="right">290.5 </td>
-									<td align="right">368.8</td>
-								</tr>
-								<tr align="right">
-									<td>C<sub>12</sub> </td>
-									<td align="right">60.4 </td>
-									<td align="right">61.7 </td>
-									<td align="right">66.1 </td>
-									<td align="right">64.4 </td>
-									<td align="right">47.2</td>
-								</tr>
-								<tr align="right">
-									<td>C<sub>22</sub> </td>
-									<td align="right"> </td>
-									<td align="right"> </td>
-									<td align="right"> </td>
-									<td align="right"> </td>
-									<td align="right">153.3</td>
-								</tr>
-								<tr align="right">
-									<td>C<sub>66</sub> </td>
-									<td align="right"> </td>
-									<td align="right">144.9 </td>
-									<td align="right"> </td>
-									<td align="right">113.1</td>
-									<td align="right">58.7</td>
-								</tr>
-							</tbody>
-						</table>
+					<table>
+						<thead>
+							<tr>
+								<th align="center">N/m</th>
+								<th align="center">Graphene<sup><fsize>1</fsize></sup></th>
+								<th align="center">This Work</th>
+								<th align="center">BN<sup><fsize>2</fsize></sup></th>
+								<th align="center">This Work</th>
+								<th align="center">BN<sub>2</sub></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>C<sub>11</sub> </td>
+								<td align="right">358.1 </td>
+								<td align="right">353.7 </td>
+								<td align="right">293.2 </td>
+								<td align="right">290.5 </td>
+								<td align="right">368.8</td>
+							</tr>
+							<tr align="right">
+								<td>C<sub>12</sub> </td>
+								<td align="right">60.4 </td>
+								<td align="right">61.7 </td>
+								<td align="right">66.1 </td>
+								<td align="right">64.4 </td>
+								<td align="right">47.2</td>
+							</tr>
+							<tr align="right">
+								<td>C<sub>22</sub> </td>
+								<td align="right"> </td>
+								<td align="right"> </td>
+								<td align="right"> </td>
+								<td align="right"> </td>
+								<td align="right">153.3</td>
+							</tr>
+							<tr align="right">
+								<td>C<sub>66</sub> </td>
+								<td align="right"> </td>
+								<td align="right">144.9 </td>
+								<td align="right"> </td>
+								<td align="right">113.1</td>
+								<td align="right">58.7</td>
+							</tr>
+						</tbody>
+					</table>
 					<div id="footer">
 						<fsize>
 							<fl>

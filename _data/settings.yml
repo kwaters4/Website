@@ -14,7 +14,7 @@ menu:
 - {name: 'About', path: 'menu', url: 'about.html'}
 - {name: 'Publications', path: 'menu', url: 'publications.html'}
 - {name: 'Coding', path: 'menu', url: 'coding.html'}
-- {name: 'Writing', path: 'menu', url: 'writing.html'}
+- {name: 'Teaching', path: 'menu', url: 'teaching.html'}
 - {name: 'Contact', path: 'menu', url: 'contact.html'}
 - {name: 'CV', path: 'assets/docs', url: 'KWaters_CV.pdf'}
 
