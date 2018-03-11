@@ -23,4 +23,4 @@ Here is the link to the syllabus that was used in the past semester of instructi
 
 #### Assignments
 
-1). [Assignment #1]({{ "/../assets/docs/Syllabus_Fall_2017.pdf.pdf" | absolute_url }})
+1). [Assignment #1]({{ "/../assets/docs/Syllabus_Fall_2017.pdf" | absolute_url }})
