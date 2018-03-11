@@ -23,4 +23,8 @@ Here is the link to the syllabus that was used in the past semester of instructi
 
 #### Assignments
 
-1). [Assignment #1]({{ "/../assets/docs/Syllabus_Fall_2017.pdf" | absolute_url }})
+1). [Assignment #1]({{ "/../assets/docs/Assignment_01.pdf" | absolute_url }})
+
+2). [Assignment #4]({{ "/../assets/docs/Assignment_04.pdf" | absolute_url }})
+
+3). [Assignment #8]({{ "/../assets/docs/Assignment_08.pdf" | absolute_url }})
