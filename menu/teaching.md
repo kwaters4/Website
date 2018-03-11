@@ -19,8 +19,8 @@ I had a wide range of students, many have never compiled a program before, while
 #### Syllabus
 Here is the link to the syllabus that was used in the past semester of instruction along with a selected assortment of assignments.
 
-<iframe src="https://kwaters4.github.io/assets/docs/Syllabus_Fall_2017.pdf" width="100%" height="800px"></iframe>
+<iframe src="https://kwaters4.github.io/assets/docs/Syllabus_Fall_2017.pdf" width="100%" height="500px"></iframe>
 
 #### Assignments
 
-1).
+1). [Assignment #1]({{ "/../assets/docs/Syllabus_Fall_2017.pdf.pdf" | absolute_url }})
