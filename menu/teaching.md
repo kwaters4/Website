@@ -34,7 +34,7 @@ With this document I try to build a course that is structured and the expectatio
 #### Assignments
 Here are a few assignments that were used in the course.
 There are many improvements that can be made, but this is the current state of the course.
-These were written with a simple task in mind that can allow the students to learn an objective quickly.
+These were written with a simple task in mind, to allow the students to learn an objective quickly.
 I strive to leave the constraints of the assignment to a minimum to leave the students with room for creativity.
 Some students would be able to complete the assignment with the bare minimum amount of effort, while other students took the time and crafted well thought out modular programs.
 In the end the students would obtain a similar grade, due to the nature of the rubric (if the task is accomplished it receives full marks).

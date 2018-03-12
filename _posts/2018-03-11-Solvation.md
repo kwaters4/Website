@@ -1,20 +1,32 @@
 ---
 layout: post
-title: "Solvating Structure"
+title: "Solvating Structures"
 author: "Kevin Waters"
 categories: journal
-tags: [solvation,pymatgen,structure,aimd]
+tags: [solvation,pymatgen,structure,aimd,periodic]
 image:
   feature: bn_ala_solvated.jpg
   credit:
   creditlink:
 ---
+Here is a program that I am using to generate solvated structures for ab initio molecular dynamics simulations I am currently running in the software suite NWChem.
+It uses a Monte Carlo scheme to solvate a periodic structure.
+Random points in the cell are selected and a oxygen atom is placed there and if any atoms overlap with the van der Waal's radius of water it is removed and the next site is sampled.
+The volume that is filled is calculated by taking the overall cell volume and subtracting the volume taken by the atoms already in the cell, again using the van der Waal's radius.
+The algorithm runs quickly and usually takes less than a second to run.
+
+The structure that is used is the structure class used by the [Pymatgen](http://pymatgen.org/) library.
+The output is structure object with the water molecules appended to the end atoms.
 
 ```python
 
-base_density = 1 / 1E8**3 * 6.022E23 / 18.09 # H20/A**3
+import numpy as np
+from pymatgen.core.periodic_table import Element
+from pymatgen.io.vasp.inputs import Poscar
+
+base_density = 1.0 / 1E8**3 * 6.022E23 / 18.09 # H20/A**3
 vdw_h2o = 1.4 # van der Waals radius in (Angstrom)
-b = 0.96 # O-H bond lengths 
+b = 0.96 # O-H bond lengths
 omega = np.radians(104.5) # H-O-H bond angle (degrees)
 
 def water(structure):
