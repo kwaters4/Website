@@ -21,6 +21,7 @@ At this point just take the structure and the libraries IO capabilities to gener
 
 
 #Code
+
 ```python
 
 import numpy as np
@@ -99,7 +100,7 @@ def water(structure):
 ```
 
 # Before
-![Unsolvated](https://kwaters4.github.io/assests/img/bn_ala.jpg)
+![Unsolvated](https://kwaters4.github.io/assets/img/bn_ala.jpg)
 
 # After
-![Solvated](https://kwaters4.github.io/assests/img/bn_ala_solvated.jpg)
+![Solvated](https://kwaters4.github.io/assets/img/bn_ala_solvated.jpg)
