@@ -19,8 +19,7 @@ The structure that is used is the structure class used by the [Pymatgen](http://
 The output is structure object with the water molecules appended to the end atoms.
 At this point just take the structure and the libraries IO capabilities to generate the file format you desire.
 
-
-#Code
+# Code
 
 ```python
 
