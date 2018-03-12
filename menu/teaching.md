@@ -40,10 +40,10 @@ Some students would be able to complete the assignment with the bare minimum amo
 In the end the students would obtain a similar grade, due to the nature of the rubric (if the task is accomplished it receives full marks).
 It can be deemed as unfair, but I think it is an acceptable method in the modern academic environment.
 
-1). [Assignment #1]({{ "/../assets/docs/Assignment_01.pdf" | absolute_url }})
+1). [Assignment #1](https://kwaters4.github.io/assets/docs/Assignment_01.pdf)
 
-2). [Assignment #4]({{ "/../assets/docs/Assignment_04.pdf" | absolute_url }})
+2). [Assignment #4](https://kwaters4.github.io/assets/docs/Assignment_04.pdf)
 
-3). [Assignment #8]({{ "/../assets/docs/Assignment_08.pdf" | absolute_url }})
+3). [Assignment #8](https://kwaters4.github.io/assets/docs/Assignment_08.pdf)
 
 If you have any questions or comments please contact me.

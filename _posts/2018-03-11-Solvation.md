@@ -100,7 +100,10 @@ def water(structure):
 ```
 
 # Before
+This is a unit cell with a monolayer of hexagonal boron-nitride with the Alanine amino acids place on top of the surface.
 ![Unsolvated](https://kwaters4.github.io/assets/img/bn_ala.jpg)
+The .cif file can be downloaded [here](https://kwaters4.github.io/assets/docs/Unsolvated.cif).
 
 # After
 ![Solvated](https://kwaters4.github.io/assets/img/bn_ala_solvated.jpg)
+The .cif file can be downloaded [here](https://kwaters4.github.io/assets/docs/Solvated.cif).
