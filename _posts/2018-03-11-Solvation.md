@@ -19,6 +19,12 @@ The structure that is used is the structure class used by the [Pymatgen](http://
 The output is structure object with the water molecules appended to the end atoms.
 At this point just take the structure and the libraries IO capabilities to generate the file format you desire.
 
+# Before
+This is a unit cell with a monolayer of hexagonal boron-nitride with the Alanine amino acids place on top of the surface.
+![Unsolvated](https://kwaters4.github.io/assets/img/bn_ala.jpg)
+The .cif file can be downloaded [here](https://kwaters4.github.io/assets/docs/Unsolvated.cif).
+
+
 # Code
 
 ```python
@@ -97,11 +103,6 @@ def water(structure):
     return structure
 
 ```
-
-# Before
-This is a unit cell with a monolayer of hexagonal boron-nitride with the Alanine amino acids place on top of the surface.
-![Unsolvated](https://kwaters4.github.io/assets/img/bn_ala.jpg)
-The .cif file can be downloaded [here](https://kwaters4.github.io/assets/docs/Unsolvated.cif).
 
 # After
 ![Solvated](https://kwaters4.github.io/assets/img/bn_ala_solvated.jpg)
