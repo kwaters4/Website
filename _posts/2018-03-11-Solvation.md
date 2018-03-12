@@ -17,12 +17,14 @@ The algorithm runs quickly and usually takes less than a second to run.
 
 The structure that is used is the structure class used by the [Pymatgen](http://pymatgen.org/) library.
 The output is structure object with the water molecules appended to the end atoms.
+At this point just take the structure and the libraries IO capabilities to generate the file format you desire.
 
+
+#Code
 ```python
 
 import numpy as np
 from pymatgen.core.periodic_table import Element
-from pymatgen.io.vasp.inputs import Poscar
 
 base_density = 1.0 / 1E8**3 * 6.022E23 / 18.09 # H20/A**3
 vdw_h2o = 1.4 # van der Waals radius in (Angstrom)
@@ -91,8 +93,13 @@ def water(structure):
 
     print("Sampled Spaces : {}".format(samples))
     print("Placed : {} \t Estimate : {}".format(water_mol, int(water_approx)))
-    #    Poscar(structure).write_file("nwchem_out.vasp")
 
     return structure
 
 ```
+
+# Before
+![Unsolvated](https://kwaters4.github.io/assests/img/bn_ala.jpg)
+
+# After
+![Solvated](https://kwaters4.github.io/assests/img/bn_ala_solvated.jpg)
