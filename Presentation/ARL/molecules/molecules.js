@@ -1,8 +1,9 @@
  // last update 2/18/2014 2:10:06 PM
         var jmolApplet0; // set up in HTML table, below
-        var jmolApplet1; // set up in HTML table, below
-        var jmolApplet2; // set up in HTML table, below
-        var jmolApplet3; // set up in HTML table, below
+        var jmolApplet1; 
+        var jmolApplet2; 
+        var jmolApplet3; 
+        var jmolApplet4; 
         // logic is set by indicating order of USE -- default is HTML5 for this test page, though
         var s = document.location.search;
         // Developers: The _debugCode flag is checked in j2s/core/core.z.js,
@@ -129,6 +130,37 @@
             jarFile: "JmolAppletSigned.jar",
             isSigned: true,
         //  script: "set antialiasDisplay; set zoomLarge true; load jsmol/data/caffeine.mol",
+            script: "background white; set antialiasDisplay; load molecules/BN_88.xyz; set frank off",
+        //        scr: 'test.spt',
+        //        script: "set zoomLarge true",
+        //  serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+            readyFunction: jmol_isReady,
+            disableJ2SLoadMonitor: true,
+                disableInitialConsole: true,
+                allowJavaScript: true,
+                antialiasDisplay: true,
+        //        script: "display not water",
+        //        zoomScaling: 4.0
+            //defaultModel: "$dopamine",
+            //console: "none", // default will be jmolApplet0_infodiv, but you can designate another div here or "none"
+        }
+        var Info5 = {
+            width: 500,
+            height: 500,
+            debug: false,
+            color: "transparent",
+        //  color: "#111111",
+        //        coverImage: "1fss.png",
+        //        coverTitle: "TEST",
+        //        deferApplet: true,
+        //        deferUncover: true,
+        //  addSelectionOptions: true,
+            use: "HTML5",   // JAVA HTML5 WEBGL are all options
+            j2sPath: "plugin/jsmol/j2s", // this needs to point to where the j2s directory is.
+            jarPath: "plugin/jsmol/java",// this needs to point to where the java directory is.
+            jarFile: "JmolAppletSigned.jar",
+            isSigned: true,
+        //  script: "set antialiasDisplay; set zoomLarge true; load jsmol/data/caffeine.mol",
             script: "background white; set antialiasDisplay; load molecules/PEEK.xyz; set frank off",
         //        scr: 'test.spt',
         //        script: "set zoomLarge true",
@@ -154,6 +186,7 @@
           $("#appdiv2").html(Jmol.getAppletHtml("jmolApplet1", Info2))
           $("#appdiv3").html(Jmol.getAppletHtml("jmolApplet2", Info3))
           $("#appdiv4").html(Jmol.getAppletHtml("jmolApplet3", Info4))
+          $("#appdiv5").html(Jmol.getAppletHtml("jmolApplet4", Info5))
         })
 
         var lastPrompt=0;

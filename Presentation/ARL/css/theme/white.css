@@ -89,7 +89,8 @@ body {
 .reveal video,
 .reveal iframe {
   max-width: 95%;
-  max-height: 95%; }
+  max-height: 95%;
+  box-shadow: none !important; }
 
 .reveal slideheader {
   position: absolute;
