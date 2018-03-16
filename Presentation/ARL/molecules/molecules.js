@@ -25,7 +25,7 @@
         //}
 
         var Info = {
-            width: 500,
+            width: 800,
             height: 500,
             debug: false,
             color: "transparent",
