@@ -25,8 +25,8 @@
         //}
 
         var Info = {
-            width: 2000px,
-            height: 2000px,
+            width: 500,
+            height: 500,
             debug: false,
             color: "transparent",
         //  color: "#111111",
