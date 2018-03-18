@@ -16,8 +16,8 @@ The volume that is filled is calculated by taking the overall cell volume and su
 The algorithm runs quickly and usually takes less than a second to run.
 
 The structure that is used is the structure class used by the [Pymatgen](http://pymatgen.org/) library.
-The output is structure object with the water molecules appended to the end atoms.
-At this point just take the structure and the libraries IO capabilities to generate the file format you desire.
+The output is a structure object with the water molecules appended to the end of the atoms list.
+At this point you can take the structure and the library's IO capabilities to generate the file format you desire.
 
 # Before
 This is a unit cell with a monolayer of hexagonal boron-nitride with the Alanine amino acids place on top of the surface.
