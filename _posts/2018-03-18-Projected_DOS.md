@@ -21,8 +21,11 @@ An atom projected code will be coming soon.
 # Files Needed
 
 1) Band structure vasprun.xml
+
 2) Band structure KPOINTS 
+
 3) Band structure PROCAR
+
 4) PDOS vasprun.xml 
 
 # Code
