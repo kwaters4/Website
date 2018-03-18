@@ -16,7 +16,7 @@ menu:
 - {name: 'Teaching', path: 'menu', url: 'teaching.html'}
 - {name: 'Publications', path: 'menu', url: 'publications.html'}
 - {name: 'Contact', path: 'menu', url: 'contact.html'}
-- {name: 'CV', path: 'assets/docs', url: 'KWaters_CV.pdf'}
+- {name: 'CV', path: 'menu', url: 'cv.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
