@@ -50,13 +50,29 @@
 				</p>
 			</section>
 
+			<section>
+				<div id="slideheader">
+					<h2>Who am I?</h2>
+				</div>
+				<ul>
+					<li> Computational "Physicist" </li>
+					<li> Started at Michigan Tech. in 2013 </li>
+					<li> Working with Ravindra Pandey </li>
+					<li> Currently at PNNL </li>
+					<li> Defending in August </li>
+				</ul>
+				<img style="float:right;width:25%;height:25%;" data-src="images/mtu.png"></img>
+				</br>
+				<img style="float:right;width:25%;height:25%;" data-src="images/pnnl.png"></img>
+			</section>
+
 			<!-- Introduction -->
 			<section>
 				<section>
 					<div id="slideheader">
 						<h2>Hypothesis</h2>
 					</div>
-					"We can accurately predict the biological molecule nanomaterial interface in physiological conditions."
+					"We can accurately predict the interface between biological molecule and nanomaterials in physiological conditions."
 				</section>
 
 				<section>
@@ -70,6 +86,8 @@
 						<li>Proteins </li>
 						<li>etc. </li>
 					</ul>
+					<!img style="float:right;width:25%;height:25%;" data-src="images/mtu.png">
+					<!/img>
 				</section>
 
 				<section>
@@ -111,6 +129,32 @@
 
 				<section>
 					<div id="slideheader">
+						<h2>Morphological Dependent Properties</h2>
+					</div>
+					<div class="row">
+						<div class="column">
+							<ul>
+								<li> Clusters </li>
+								<li> Nanoparticles </li>
+								<li> Fullerenes </li>
+								<li> Nanotubes </li>
+								<li> 2D-Materials </li>
+							</ul>
+						</div>
+						<div class="column">
+							<img max-width:40%; max-height:40%; data-src="images/Nanomaterials.jpg"></img>
+						</div>
+					</div>
+					<fsize>
+						<ufl>
+							<li><a href="https://doi.org/10.1038/nmat1849"> A. K. Geim et. al Nature Materials (2007) 6: 183 </a> </li>
+						</ufl>
+					</fsize>
+
+				</section>
+
+				<section>
+					<div id="slideheader">
 						<h2>Boron Nitride Nanotubes</h2>
 					</div>
 					<div class="row">
@@ -139,18 +183,23 @@
 						<h2>Boron Nitride Nanotubes</h2>
 					</div>
 					<img max-width:40%; max-height:40%; data-src="images/Zig_Arm.png"></img>
+					<fsize>
+						<ufl>
+							<li><a href="https://phlebas.co/2015/06/17/a-primer-on-carbon-nanotubes-part-1/"> Steel, "A Primer on Carbon Nanotubes – Part 1"</a> </li>
+						</ufl>
+					</fsize>
 				</section>
 
 				<section>
 					<div id="slideheader">
-						<h2>Boron Nitride Nanotubes</h2>
+						<h2>Boron Nitride Nanotubes (Band Gap)</h2>
 					</div>
 					<img width="75%" height="75%" ; data-src="images/BNNT_Chir.jpg"></img>
 				</section>
 
 				<section>
 					<div id="slideheader">
-						<h2>Boron Nitride Nanotubes</h2>
+						<h2>Boron Nitride Nanotubes (Strain Energy)</h2>
 					</div>
 					<img width="75%" height="75%" ; data-src="images/BNNT_Chir_Strain.jpg"></img>
 				</section>
@@ -243,16 +292,26 @@
 					<img width="75%" height="75%" ; data-src="images/BN2_Bonds.jpg"></img>
 				</section>
 
-
 				<section>
 					<div id="slideheader">
-						<h2>Math to Introduce Mechanical Properties</h2>
+						<h2>Hooke's Law / Elastic Tensor</h2>
 					</div>
+					<h3>
+					<script type="math/tex; mode=display">
+						\boldsymbol{\sigma_{ij}} =\boldsymbol{C_{ijkl}\epsilon_{kl}}
+					</script>
+				</h3>
+					</br>
+					<ul>
+						<li> <b>&sigma;<sub>ij<sub></b> is the stress tensor </li>
+						<li> <b>C<sub>ijkl<sub></b> is the elastic tensor </li>
+						<li> <b>&epsilon;<sub>kl<sub></b> is the stain tensor </li>
+					</ul>
 				</section>
 
 				<section>
 					<div id="slideheader">
-						<h2>Stiffness Tensor</h2>
+						<h2>Elastic Tensor</h2>
 					</div>
 					<script type="math/tex; mode=display">
 						C_{IJ} = \begin{bmatrix} C_{11} & C_{12} & C_{13} & C_{14} & C_{15} & C_{16} \\ & C_{22} & C_{23} & C_{24} & C_{25} & C_{26} \\ & & C_{33} & C_{34} & C_{35} & C_{36} \\ & & & C_{44} & C_{45} & C_{46} \\ & & & & C_{55} & C_{56} \\ & & & & & C_{66} \\ \end{bmatrix}
@@ -280,10 +339,32 @@
 					<div id="slideheader">
 						<h2>Deformation Matrices</h2>
 					</div>
-					<script type="math/tex; mode=display">
-						\boldsymbol{F_{11}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{11} & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{array} \right] \\ \boldsymbol{F_{22}} = \left[ \begin{array}{*4{C{1em}}} 1 & 0 & 0 \\ 0 &\lambda_{22} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\
-						\boldsymbol{F_{66}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{66} & 0 & 0 \\ 0 & \lambda_{66} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\ \boldsymbol{F_{12}} = \left[ \begin{array}{*4{C{1em}}} 1 & \epsilon_{12} & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array}\right]\\
-					</script>
+					<table>
+						<tr>
+							<td style="border-bottom: 0;">
+								<script type="math/tex; mode=display">
+									\boldsymbol{F_{11}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{11} & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{array} \right] \\
+								</script>
+							</td>
+							<td style="border-bottom: 0;">
+								<script type="math/tex; mode=display">
+									\boldsymbol{F_{22}} = \left[ \begin{array}{*4{C{1em}}} 1 & 0 & 0 \\ 0 &\lambda_{22} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\
+								</script>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<script type="math/tex; mode=display">
+									\boldsymbol{F_{66}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{66} & 0 & 0 \\ 0 & \lambda_{66} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\
+								</script>
+							</td>
+							<td>
+								<script type="math/tex; mode=display">
+									\boldsymbol{F_{12}} = \left[ \begin{array}{*4{C{1em}}} 1 & \epsilon_{12} & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array}\right]\\
+								</script>
+							</td>
+						</tr>
+					</table>
 				</section>
 
 				<section>
@@ -426,9 +507,16 @@
 
 			<!-- Boron Nitride Nano/Bio -->
 			<section>
-				<h2>Conjugated Boron Nitride Nanomaterials</h2>
-				<fsize> <a href="https://doi.org/10.1021/acsomega.6b00321"> Waters et. al. (2017) ACS Omega 2:76</a></fsize>
+				<section>
+					<h2>Conjugated Boron Nitride Nanomaterials</h2>
+					<fsize> <a href="https://doi.org/10.1021/acsomega.6b00321"> Waters et. al. (2017) ACS Omega 2:76</a></fsize>
+				</section>
+
+				<section>
+					<img max-width:40%; max-height:40%; data-src="images/amino.jpg"></img>
+				</section>
 			</section>
+
 			<!-- Boron Nitride Nano/Bio End -->
 
 			<!-- Gold BN  -->
@@ -539,14 +627,14 @@
 			<!-- Gold BN End -->
 
 			<!-- Challenges -->
-			<section id="fragments">
+			<section>
 				<h2>Challenges</h2>
 				<ul>
-					<span class="fragment"><li>Computation power (Hardware/Software) </li></span>
-					<span class="fragment"><li>Scaling of theories (CCSD vs. DFT vs. MD) </li></span>
-					<span class="fragment"><li>Choosing the "right" theory</li></span>
-					<span class="fragment"><li>Inclusion of all releveant paramters (ions, solution, pH) </li></span>
-					<span class="fragment"><li>Asking the right questions </li></span>
+					<li>Computation power (Hardware/Software) </li>
+					<li>Scaling of theories (CCSD vs. DFT vs. MD) </li>
+					<li>Choosing the "right" theory</li>
+					<li>Inclusion of all releveant paramters (ions, solution, pH) </li>
+					<li>Asking the right questions </li>
 				</ul>
 			</section>
 			<!-- Challenges End-->
