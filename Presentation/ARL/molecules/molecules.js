@@ -182,12 +182,14 @@
         $(document).ready(function() {
         //  Jmol.getApplet("jmolApplet0", Info)
         //  $("#appdiv").html(Jmol.getAppletHtml("jmolApplet0"))
-          $("#appdiv1").html(Jmol.getAppletHtml("jmolApplet0", Info))
-          $("#appdiv2").html(Jmol.getAppletHtml("jmolApplet1", Info2))
-          $("#appdiv3").html(Jmol.getAppletHtml("jmolApplet2", Info3))
-          $("#appdiv4").html(Jmol.getAppletHtml("jmolApplet3", Info4))
-          $("#appdiv5").html(Jmol.getAppletHtml("jmolApplet4", Info5))
+          $("#appdiv1").html(Jmol.getAppletHtml(jmolApplet0, Info))
+          $("#appdiv2").html(Jmol.getAppletHtml(jmolApplet1, Info2))
+          $("#appdiv3").html(Jmol.getAppletHtml(jmolApplet2, Info3))
+          $("#appdiv4").html(Jmol.getAppletHtml(jmolApplet3, Info4))
+          $("#appdiv5").html(Jmol.getAppletHtml(jmolApplet4, Info5))
+          $("#jsmolbtns").html(Jmol.jmolButton(jmolApplet0,"select *;spacefill 75%" ,"Space Fill") + Jmol.jmolButton(jmolApplet0, "select *; wireframe 0.15; spacefill 23%;","Ball and Stick") +  Jmol.jmolButton(jmolApplet0, "select *; wireframe 0.03; spacefill 1%;","Stick") )
         });
+
 
           //$("#appdiv1").html(Jmol.resizeApplet("jmolApplet0", [500,800]));
         var lastPrompt=0;
