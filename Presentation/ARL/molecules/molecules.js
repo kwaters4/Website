@@ -187,7 +187,8 @@
           $("#appdiv3").html(Jmol.getAppletHtml("jmolApplet2", Info3))
           $("#appdiv4").html(Jmol.getAppletHtml("jmolApplet3", Info4))
           $("#appdiv5").html(Jmol.getAppletHtml("jmolApplet4", Info5))
-          $("#jsmolbtns").html(Jmol.jmolButton("jmolApplet0","select *;color amino" ,"Amino Acids") + Jmol.jmolButton(jmolApplet0, "select *; wireframe 0.15; spacefill 23%; cartoon off;","Ball and Stick") +  Jmol.jmolButton(jmolApplet0, "select *; color cpk;","Elemental") )
+          $("#jsmolbtnss").html(Jmol.jmolButton("jmolApplet0","select *;color chains; cartoon only;" ,"Peptide Chains") + Jmol.jmolButton("jmolApplet0", "select *; wireframe 0.15; spacefill 23%; cartoon off;","Atoms"))
+          $("#jsmolbtnsc").html(Jmol.jmolButton("jmolApplet0", "select *; color cpk;","Elemental") + Jmol.jmolButton("jmolApplet0","select *;color amino" ,"Amino Acids"))
         });
 
 
