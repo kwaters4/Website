@@ -1,10 +1,10 @@
  // last update 2/18/2014 2:10:06 PM
         var jmolApplet0; // set up in HTML table, below
-        var jmolApplet1; 
-        var jmolApplet2; 
-        var jmolApplet3; 
-        var jmolApplet4; 
-        var jmolApplet5; 
+        var jmolApplet1;
+        var jmolApplet2;
+        var jmolApplet3;
+        var jmolApplet4;
+        var jmolApplet5;
         // logic is set by indicating order of USE -- default is HTML5 for this test page, though
         var s = document.location.search;
         // Developers: The _debugCode flag is checked in j2s/core/core.z.js,
@@ -19,6 +19,18 @@
         jmol_isReady = function(applet) {
         //  document.title = (applet._id + " - Jmol " + ___JmolVersion)
             Jmol._getElement(applet, "appletdiv").style.border="0px solid blue"
+        }
+        function jmspin() {
+          var scpt;
+          var jjj = document.getElementById("jmolspin").value;
+          if  (jjj == "Spin off") {
+            scpt = "Spin off;";
+            document.getElementById("jmolspin").value = "Spin on";
+          } else {
+            scpt = "Spin on;";
+            document.getElementById("jmolspin").value = "Spin off";
+          }
+          jms(scpt);
         }
         //jmol_isReady = function() { alert('Welcome to Jmol!'); }
         //jmol_isReady = function() {
@@ -190,6 +202,7 @@
           $("#appdiv5").html(Jmol.getAppletHtml("jmolApplet4", Info5))
           $("#jsmolbtnss").html(Jmol.jmolButton("jmolApplet0","select *;color chains; cartoon only;" ,"Peptide Chains") + Jmol.jmolButton("jmolApplet0", "select *; wireframe 0.15; spacefill 23%; cartoon off;","Atoms"))
           $("#jsmolbtnsc").html(Jmol.jmolButton("jmolApplet0", "select *; color cpk;","Elemental") + Jmol.jmolButton("jmolApplet0","select *;color amino" ,"Amino Acids"))
+          $("#jmolspin").html(Jmol.jmolButton("jmolApplet0", "select *; color cpk;","Elemental") + Jmol.jmolButton("jmolApplet0","select *;color amino" ,"Amino Acids"))
         });
 
 
