@@ -4,6 +4,7 @@
         var jmolApplet2; 
         var jmolApplet3; 
         var jmolApplet4; 
+        var jmolApplet5; 
         // logic is set by indicating order of USE -- default is HTML5 for this test page, though
         var s = document.location.search;
         // Developers: The _debugCode flag is checked in j2s/core/core.z.js,
