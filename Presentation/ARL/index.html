@@ -489,6 +489,15 @@
 					<img max-width:80%; max-height:80%; data-src="images/cartoon_au_bnnt.png"></img>
 					</br>
 					<fsize> <a href="https://doi.org/10.1039/c3cp51728d"> Sainsbury et. al. (2007) JACS 111:12992</a></fsize>
+					<aside class="notes">
+						<ul>
+							<li> Generating defects for additional chemistries to occur </li>
+							<li> Ammonia Plasma (NH2) </li>
+							<li> Amine groups can be utilized for covalent and non-covalent interactions </li>
+							</br>
+							<li> est.: 36:00 </li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
@@ -528,6 +537,14 @@
 					</table>
 					</br>
 					<img width="75%" height="75%" ; data-src="images/bn_nh2.jpg"></img>
+					<aside class="notes">
+						<ul>
+							</br>
+							<li> Increased the "doping" of the material surfaces </li>
+							<li> Interesting result when 50% coverage was simulated </li>
+							<li> est.: 38:00 </li>
+						</ul>
+					</aside>
 				</section>
 
 
@@ -572,14 +589,14 @@
 					</div>
 					<h3>
 					<script type="math/tex; mode=display">
-						\boldsymbol{\sigma_{ij}} =\boldsymbol{C_{ijkl}\epsilon_{kl}}
+						\boldsymbol{\sigma_{I}} =\boldsymbol{C_{IJ}\epsilon_{J}}
 					</script>
 				</h3>
 					</br>
 					<ul>
-						<li> <b>&sigma;<sub>ij<sub></b> is the stress tensor </li>
-						<li> <b>C<sub>ijkl<sub></b> is the elastic tensor </li>
-						<li> <b>&epsilon;<sub>kl<sub></b> is the stain tensor </li>
+						<li> <b>&sigma;<sub>I<sub></b> is the stress tensor </li>
+						<li> <b>C<sub>IJ<sub></b> is the elastic tensor </li>
+						<li> <b>&epsilon;<sub>J<sub></b> is the stain tensor </li>
 					</ul>
 				</section>
 
@@ -594,16 +611,62 @@
 
 				<section>
 					<div id="slideheader">
-						<h2>Workflow</h2>
+						<h2>Results</h2>
 					</div>
-					<ul>
-						<li> -2% to 2% in steps of 0.2% </li>
-						<li> Generate optimized structure </li>
-						<li> Apply deformation matrix to optimized structure </li>
-						<li> Optimized atoms with modified unit cell </li>
-						<li> Extract Cauchy stress data (&sigma;) </li>
-						<li> Calculate mechanical properties of interest </li>
-					</ul>
+					<table>
+						<thead>
+							<tr>
+								<th align="center">N/m</th>
+								<th align="center">Graphene<sup>1</sup></th>
+								<th align="center">This Work</th>
+								<th align="center">BN<sup>2</sup></th>
+								<th align="center">This Work</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="border-bottom: 0;">C<sub>11</sub> </td>
+								<td align="right" style="border-bottom: 0;">358.1 </td>
+								<td align="right" style="border-bottom: 0;">353.7 </td>
+								<td align="right" style="border-bottom: 0;">293.2 </td>
+								<td align="right" style="border-bottom: 0;">290.5 </td>
+								<td align="right" style="border-bottom: 0;"></td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;">C<sub>12</sub> </td>
+								<td align="right" style="border-bottom: 0;">60.4 </td>
+								<td align="right" style="border-bottom: 0;">61.7 </td>
+								<td align="right" style="border-bottom: 0;">66.1 </td>
+								<td align="right" style="border-bottom: 0;">64.4 </td>
+								<td align="right" style="border-bottom: 0;"></td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;">C<sub>22</sub> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"></td>
+							</tr>
+							<tr align="right">
+								<td>C<sub>66</sub> </td>
+								<td align="right" style="border-bottom: 0;">148.9</td>
+								<td align="right" style="border-bottom: 0;">144.9 </td>
+								<td align="right" style="border-bottom: 0;">113.5</td>
+								<td align="right" style="border-bottom: 0;">113.1</td>
+								<td align="right" style="border-bottom: 0;"></td>
+							</tr>
+						</tbody>
+						</br>
+					</table>
+					<div id="footer">
+						<fsize>
+							<fl>
+								<li><a href="https://doi.org/10.1103/PhysRevB.80.205407"> Wei et. al. (2009) Physical Review B 80: 205407</a> </li>
+								<li><a href="https://doi.org/10.1016/j.commatsci.2011.12.029"> Peng et. al. (2012) Computational Materials Science 56: 11 </a> </li>
+							</fl>
+						</fsize>
+					</div>
 				</section>
 
 				<section>
@@ -615,9 +678,7 @@
 							<tr>
 								<th align="center">N/m</th>
 								<th align="center">Graphene<sup>1</sup></th>
-								<th align="center">This Work</th>
 								<th align="center">BN<sup>2</sup></th>
-								<th align="center">This Work</th>
 								<th align="center">BN<sub>2</sub></th>
 							</tr>
 						</thead>
@@ -625,33 +686,25 @@
 							<tr>
 								<td style="border-bottom: 0;">C<sub>11</sub> </td>
 								<td align="right" style="border-bottom: 0;">358.1 </td>
-								<td align="right" style="border-bottom: 0;">353.7 </td>
 								<td align="right" style="border-bottom: 0;">293.2 </td>
-								<td align="right" style="border-bottom: 0;">290.5 </td>
 								<td align="right" style="border-bottom: 0;">368.8</td>
 							</tr>
 							<tr align="right">
 								<td style="border-bottom: 0;">C<sub>12</sub> </td>
 								<td align="right" style="border-bottom: 0;">60.4 </td>
-								<td align="right" style="border-bottom: 0;">61.7 </td>
 								<td align="right" style="border-bottom: 0;">66.1 </td>
-								<td align="right" style="border-bottom: 0;">64.4 </td>
 								<td align="right" style="border-bottom: 0;">47.2</td>
 							</tr>
 							<tr align="right">
 								<td style="border-bottom: 0;">C<sub>22</sub> </td>
 								<td align="right" style="border-bottom: 0;"> </td>
 								<td align="right" style="border-bottom: 0;"> </td>
-								<td align="right" style="border-bottom: 0;"> </td>
-								<td align="right" style="border-bottom: 0;"> </td>
 								<td align="right" style="border-bottom: 0;">153.3</td>
 							</tr>
 							<tr align="right">
 								<td>C<sub>66</sub> </td>
-								<td align="right" style="border-bottom: 0;"> </td>
-								<td align="right" style="border-bottom: 0;">144.9 </td>
-								<td align="right" style="border-bottom: 0;"> </td>
-								<td align="right" style="border-bottom: 0;">113.1</td>
+								<td align="right" style="border-bottom: 0;">148.9</td>
+								<td align="right" style="border-bottom: 0;">113.5</td>
 								<td align="right" style="border-bottom: 0;">58.7</td>
 							</tr>
 						</tbody>
@@ -666,6 +719,7 @@
 						</fsize>
 					</div>
 				</section>
+
 			</section>
 			<!--    BN2 end   -->
 
@@ -740,7 +794,7 @@
 					<div id="slideheader">
 						<h2> Elastic Constants </h2>
 					</div>
-					<table style="font-size:	22px">
+					<table >
 						<thead>
 							<tr>
 								<th>(GPa)</th>
@@ -787,7 +841,7 @@
 					<div id="slideheader">
 						<h2> Poisson's Ratio </h2>
 					</div>
-					<table style="font-size:	22px">
+					<table >
 						<thead>
 							<tr>
 								<th> </th>
@@ -909,6 +963,13 @@
 						<h2>Gold Cluster Cohesive Energy </h2>
 					</div>
 					<img width="75%" height="75%" ; data-src="images/Cohesive_Energy.jpg"></img>
+				<aside class="notes">
+					<ul>
+						<li> Transition from 2D to 3D stabilty</li>
+						<li> Different theories predict different transitions</li>
+						</br>
+					</ul>
+				</aside>
 				</section>
 
 				<section>
@@ -919,7 +980,6 @@
 						<ul>
 							<li> Substrate of h-BN </li>
 							<li> vDW Interactions</li>
-							<li> Semi-emperical corrections </li>
 							<li> Deformation for 3D clusters</li>
 						</ul>
 					</div>
@@ -976,7 +1036,7 @@
 					<li class="fragment">Computation power (Hardware/Software) </li>
 					<li class="fragment">Scaling of theories (CCSD vs. DFT vs. MD) </li>
 					<li class="fragment">Choosing the "right" theory</li>
-					<li class="fragment">Inclusion of all releveant paramters (ions, solution, pH) </li>
+					<li class="fragment">Inclusion of all releveant paramters (ions, solution, pH, etc.) </li>
 					<li class="fragment">Asking the right questions </li>
 				</ul>
 			</section>
