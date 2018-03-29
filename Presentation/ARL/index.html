@@ -112,22 +112,7 @@
 						<h2>Nanomaterials</h2>
 					</div>
 					<p>Materials with at least one dimension in the sub-micron range.</p>
-					<aside class="notes">
-						<ul>
-							<li> There are experts trying defining the term</li>
-							<li> Broadest definition</li>
-							<li> Keep it simple. "What is in a name?"</li>
-							</br>
-							<li> est.: 7:00 </li>
-						</ul>
-					</aside>
-				</section>
-
-				<section>
-					<div id="slideheader">
-						<h2>Nanomaterials</h2>
-					</div>
-					<ul>
+					<ul class="fragment">
 						<li> Ratio of surface to bulk atoms changes</li>
 						<li> Bulk properties are not present at this scale</li>
 						<li> Adding one atom changes the properties of the material</li>
@@ -136,13 +121,14 @@
 					</ul>
 					<aside class="notes">
 						<ul>
+							<li> Keep it simple. "What is in a name?"</li>
 							<li> Area r^2, Volume r^3 </li>
 							<li> With more surface atoms, the chemistry of the material is richer </li>
 							<li> Electronic and mechanical properties are different than their bulk counterpart </li>
 							<li> Changing from a cluster of 5 atoms to 6 can lead to dramatic changes </li>
 							<li> A large number of configurations are possible, hard to find global structures </li>
 							</br>
-							<li> est.: 9:00 </li>
+							<li> est.: 7:00 </li>
 						</ul>
 					</aside>
 				</section>
@@ -397,6 +383,7 @@
 					</aside>
 				</section>
 
+				
 				<section>
 					<img max-width:80%; max-height:80%; data-src="images/amino.jpg"></img>
 					<aside class="notes">
@@ -488,7 +475,7 @@
 					</div>
 					<img max-width:80%; max-height:80%; data-src="images/cartoon_au_bnnt.png"></img>
 					</br>
-					<fsize> <a href="https://doi.org/10.1039/c3cp51728d"> Sainsbury et. al. (2007) JACS 111:12992</a></fsize>
+					<fsize> <a href="https://doi.org/10.1021/jp072958n"> Sainsbury et. al. (2007) JACS 111:12992</a></fsize>
 					<aside class="notes">
 						<ul>
 							<li> Generating defects for additional chemistries to occur </li>
@@ -589,7 +576,7 @@
 					</div>
 					<h3>
 					<script type="math/tex; mode=display">
-						\boldsymbol{\sigma_{I}} =\boldsymbol{C_{IJ}\epsilon_{J}}
+						\boldsymbol{\sigma_{I}} =\boldsymbol{C_{IJ}\eta_{J}}
 					</script>
 				</h3>
 					</br>
@@ -598,6 +585,9 @@
 						<li> <b>C<sub>IJ<sub></b> is the elastic tensor </li>
 						<li> <b>&epsilon;<sub>J<sub></b> is the stain tensor </li>
 					</ul>
+					<script type="math/tex; mode=display">
+					\big[\boldsymbol{\sigma_{I}\eta_{J}^{+}}\big]^{T}\approx{\boldsymbol{C_{IJ}}}
+					</script>
 				</section>
 
 				<section>
@@ -752,7 +742,7 @@
 					<ul>
 						<li> Investigating properties of the polymer's future applications </li>
 						<li> ReaxxFF force field testing and validation </li>
-						<li> Comparing crystalline classical MD with DFT calculations </li>
+						<li> Comparing crystalline data (MD vs. DFT) </li>
 						<li> Challenging to model Amorphous PEEK with electron approach </li>
 					</ul>
 					<img style="float:right;width:55%;height:55%;" data-src="images/PEEK.png"></img>
@@ -794,7 +784,7 @@
 					<div id="slideheader">
 						<h2> Elastic Constants </h2>
 					</div>
-					<table >
+					<table>
 						<thead>
 							<tr>
 								<th>(GPa)</th>
@@ -816,25 +806,32 @@
 							<tr>
 								<td align="left" style="border-bottom: 0;"> C<sub>33<sub> </td>
 								<td align="center" style="border-bottom: 0;">7.18 ± 1.34 </td>
-								<td align="center" style="border-bottom: 0;"> 24 </td>
+								<td align="center" style="border-bottom: 0;"> 15.3 </td>
 							</tr>
 							<tr>
 								<td align="left" style="border-bottom: 0;"> C<sub>44<sub> </td>
 								<td align="center" style="border-bottom: 0;">0.24 ± 0.16 </td>
-								<td align="center" style="border-bottom: 0;"> 14.0 </td>
+								<td align="center" style="border-bottom: 0;">14.0 </td>
 							</tr>
 							<tr>
 								<td align="left" style="border-bottom: 0;"> C<sub>55<sub> </td>
 								<td align="center" style="border-bottom: 0;">3.79 ± 3.00 </td>
-								<td align="center" style="border-bottom: 0;"> 9.0 </td>
+								<td align="center" style="border-bottom: 0;">9.0 </td>
 							</tr>
 							<tr>
 								<td align="left" style="border-bottom: 0;"> C<sub>66<sub> </td>
 								<td align="center" style="border-bottom: 0;">3.37 ± 0.36 </td>
-								<td align="center" style="border-bottom: 0;"> 4.8 </td>
+								<td align="center" style="border-bottom: 0;">4.8 </td>
 							</tr>
 						</tbody>
 					</table>
+				<aside class="notes">
+					<ul>
+						<li> Chemcal bonds are only in the C11 Direction </li>
+						<li> vDW bonded are difficult to model</li>
+						</br>
+					</ul>
+				</aside>
 				</section>
 
 				<section>
@@ -867,6 +864,13 @@
 							</tr>
 						</tbody>
 					</table>
+				<aside class="notes">
+					<ul>
+						<li> Ratios with off diagonals playing a significant role </li>
+						<li> vDW bonded are difficult to model</li>
+						</br>
+					</ul>
+				</aside>
 				</section>
 			</section>
 			<!--    PEEK end   -->
@@ -905,7 +909,7 @@
 					<img width="35%" height="35%" ; data-src="images/Gold_QD_Schematics.jpg"></img>
 					<div id="footer">
 						<fsize>
-							<a href="https://doi.org/10.1002/adma.201301339"> Chee et. al. (2013) Advanced Materials 25: 4544</a>
+							<a href="https://doi.org/10.1002/adma.201301339"> Lee et. al. (2013) Advanced Materials 25: 4544</a>
 						</fsize>
 					</div>
 				</section>
