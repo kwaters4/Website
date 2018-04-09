@@ -10,7 +10,7 @@ title: Publications
 
 *  <strong>Title</strong>    : Absorption and Fluorescence Properties of Eight C4 Substituted 7-Aminocoumarins <br />
    <strong>Authors</strong>  : Shraddha Singh, Vaho Begoyan, Marina Tanasova, Kevin Waters, Max Seel, Ravindra Pandey <br />
-   <strong>Location</strong> : Journal of Physical Organic Chemistry, Accpeted <br />
+   <strong>Location</strong> : Journal of Physical Organic Chemistry, Accepted <br />
    <strong>DOI</strong>      : n/a
 
 *  <strong>Title</strong>    : Dynamics of Self-Assembled Cytosine Nucleobases on Graphene <br />
