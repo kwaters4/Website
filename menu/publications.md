@@ -23,9 +23,10 @@ title: Publications
    <strong>Location</strong> : Journal of Physics: Condensed Matter <br />
    <strong>DOI</strong>      : [10.1088/1361-648X/aaad96](https://doi.org/10.1088/1361-648X/aaad96) <br />
 
+*  <strong>Title</strong>    : Hierarchical Self-Assembly of Noncanonical Guanine Nucleobases on Graphene <br />
    <strong>Authors</strong>  : Nabanita Saikia, Kevin Waters, Shashi P. Karna, Ravindra Pandey <br />
    <strong>Location</strong> : ACS Omega, vol. 2. pp. 3457, 2017 <br />
-   <strong>DOI</strong>      : [10.1021/acsomega.7b00669](https://doi.org/10.1021/acsomega.7b00669) <br />
+   <strong>DOI</strong>      : [10.1021/acsomega.7b00528](https://10.1021/acsomega.7b00528) <br />
 
 *  <strong>Title</strong>    : Amino-Acid-Conjugated Gold Clusters: Interaction of Alanine and Tryptophan with Au<sub>8</sub> and Au<sub>20</sub> <br />
    <strong>Authors</strong>  : Marwa H. Abdalmoneam, Kevin Waters, Nabanita Saikia, and Ravindra Pandey <br />
