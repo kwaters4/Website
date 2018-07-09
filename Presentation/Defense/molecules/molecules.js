@@ -220,7 +220,7 @@
             //defaultModel: "$dopamine",
             //console: "none", // default will be jmolApplet0_infodiv, but you can designate another div here or "none"
         }
-        var Info6 = {
+        var Info7 = {
             width: 500,
             height: 500,
             debug: false,
@@ -237,7 +237,7 @@
             jarFile: "JmolAppletSigned.jar",
             isSigned: true,
         //  script: "set antialiasDisplay; set zoomLarge true; load jsmol/data/caffeine.mol",
-            script: "background white; set antialiasDisplay; load molecules/bnnt_aimd_frame.xyz; set frank off",
+            script: "background white; set antialiasDisplay; load molecules/bnml_aimd_frame.xyz; set frank off",
         //        scr: 'test.spt',
         //        script: "set zoomLarge true",
         //  serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
