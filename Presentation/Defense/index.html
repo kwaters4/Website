@@ -1,0 +1,1002 @@
+<!doctype html>
+<html>
+
+<head>
+
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>MTU Defense Presentation</title>
+	<meta name="description" content="Defense Presentation">
+	<meta name="author" content="Kevin Waters">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<script type="text/javascript" src="plugin/jsmol/JSmol.min.js"></script>
+
+	<script type="text/javascript" src="molecules/molecules.js"></script>
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- Title -->
+			<section>
+				<h2>An Investigation of Boron Nitride Nanomaterial Functionalization  </h2>
+				<p>
+					<small> Michigan Tech PhD. Defense </small>
+				</p>
+				<p>
+					<small>by <a href="https://kwaters4.github.io/">Kevin Waters</a></small>
+					</br>
+					<small> Follow along @  <a href="https://kwaters4.github.io/Presentation/Defense/">kwaters4.github.io/Presentation/Defense/</a></small>
+				</p>
+				<aside class="notes">
+					<ul>
+						<li> Follow along at the URL if you are interested, works on any device</li>
+						<li> Feel free to ask questions at any time</li>
+						</br>
+					</ul>
+				</aside>
+			</section>
+			<!-- Title End -->
+
+			<!-- Background -->
+			<section>
+				<div id="slideheader">
+					<h2>My Background</h2>
+				</div>
+				<ul>
+					<li> Computational "Physicist" </li>
+					<li> Materials modeling using first principles methods </li>
+					<li> At <a href="http://www.mtu.edu/"> Michigan Tech.</a> working with <a href="http://www.mtu.edu/physics/department/faculty/pandey/"> Ravindra Pandey </a> </li>
+					<li> Currently at PNNL on Fellowship working on <a href="http://www.nwchem-sw.org/"> NWChem </a> </li>
+				</ul>
+				<img style="float:right;width:25%;height:25%;" data-src="images/mtu.png"></img>
+				</br>
+				<img style="float:right;width:25%;height:25%;" data-src="images/pnnl.png"></img>
+				<aside class="notes">
+					<ul>
+						<li> Umbrella : Materials, Chemistry, Physics, NanoScience, Biology </li>
+						<li> Various Projects : Fluorescence, Thermoelectrics, Mechanical Properties, etc. </li>
+						<li> Dr. Pandey, started on interface simulations 10 years ago. </li>
+						<li> Working on implementing new techniques for increased accuracy </li>
+						</br>
+						<li> est.: 4:00 </li>
+					</ul>
+				</aside>
+			</section>
+			<!-- Background End -->
+
+			<!-- Introduction -->
+			<section>
+				<section>
+					<div id="slideheader">
+						<h2>Hypothesis</h2>
+					</div>
+					"We can accurately predict the interface between biological molecules and nanomaterials in physiological conditions."
+					<aside class="notes">
+						<ul>
+							<li> Long term project, vague question</li>
+							<li> pH,pKa,counter-ions, solvents, etc </li>
+							<li> Started out with question and branched off</li>
+							<li> We are breaking down the statement in the next few slides</li>
+							</br>
+							<li> est.: 6:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>Nanomaterials</h2>
+					</div>
+					<p>Materials with at least one dimension in the sub-micron range.</p>
+					<ul class="fragment">
+						<li> Ratio of surface to bulk atoms changes</li>
+						<li> Bulk properties are not present at this scale</li>
+						<li> Adding one atom changes the properties of the material</li>
+						<li> Large configuration spaces to search </li>
+						<li> Prediction can be utilized, but caution should be practiced</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li> Keep it simple. "What is in a name?"</li>
+							<li> Area r^2, Volume r^3 </li>
+							<li> With more surface atoms, the chemistry of the material is richer </li>
+							<li> Electronic and mechanical properties are different than their bulk counterpart </li>
+							</br>
+							<li> est.: 7:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Examples of Nanomaterials</h2>
+					</div>
+					<div class="row">
+						<div class="column">
+							<ul>
+								<li> Clusters </li>
+								<li> Nanoparticles </li>
+								<li> Fullerenes </li>
+								<li> Nanotubes </li>
+								<li> 2D-Materials </li>
+							</ul>
+						</div>
+						<div class="column">
+							<img max-width:40%; max-height:40%; data-src="images/Nanomaterials.jpg"></img>
+						</div>
+					</div>
+					<fsize>
+						<ufl>
+							<li><a href="https://doi.org/10.1038/nmat1849"> A. K. Geim et. al Nature Materials (2007) 6: 183 </a> </li>
+						</ufl>
+					</fsize>
+					<aside class="notes">
+						<ul>
+							<li> Clusters are the smallest (Gold, Silver, Fe, etc) </li>
+							<li> Nanoparticles tend to be larger and have plasmonic waves (Au metals) </li>
+							<li> 1996 Nobel Prize for discovery of Fullerenes (C<sub>60<sub> ) </li>
+							<li> Carbon nanotubes are the best known nanotubes discovered in 1991 </li>
+							<li> 2010 Nobel Prize for discovery of Graphene </li>
+							</br>
+							<li> est.: 9:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Boron Nitride Nanotubes</h2>
+					</div>
+					<div class="row">
+						<div class="column">
+							<ul>
+								<li>Predicted in 1994</li>
+								<li>Synthesized in 1995</li>
+								<li>Typically considred a wide band gap semiconductor</li>
+								<li>Parameters to consider</li>
+								<ul>
+									<li>Chirality (n,n), (n,0), (n,m)</li>
+									<li>Diameter</li>
+									<li>Layers</li>
+								</ul>
+								<li>Excellent chemical and thermal stability </li>
+							</ul>
+						</div>
+						<div class="column">
+							<div id="appdiv5"></div>
+						</div>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li> Based on carbon nanomaterials, similarities in chemistry </li>
+							<li> Synthesized four years after Carbon nanotubes </li>
+							<li> Multi-walled tubes were grown 1 to 3 nm diamter, 200 nm lengths </li>
+							<li> The gap of nanotubes and monolayers are around 6 - 7 eV. </li>
+							<li> Nanotubes have different features depending on their configurations </li>
+							</br>
+							<li> est.: 11:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>Boron Nitride Nanotubes</h2>
+					</div>
+					<img max-width:40%; max-height:40%; data-src="images/Zig_Arm.png"></img>
+					<fsize>
+						<ufl>
+							<li><a href="https://phlebas.co/2015/06/17/a-primer-on-carbon-nanotubes-part-1/"> Steel, "A Primer on Carbon Nanotubes – Part 1"</a> </li>
+						</ufl>
+					</fsize>
+					<aside class="notes">
+						<ul>
+							<li> Arm Chair Configuration </li>
+							<li> Zig-Zag Configuration </li>
+							<li> Chiral Configuration </li>
+							<li> Different Diameters </li>
+							<li> Multi-walled nanotubes </li>
+							<li> Multi-walled are common </li>
+							</br>
+							<li> est.: 12:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Difference between Carbon and Boron Nitride Nanomaterials</h2>
+					</div>
+					<ul>
+					<li> Semi-ionic bonds (B-N) versus covalent (C-C)</li>
+					<li> Interlayer interactions are stronger</li>
+					<li> BNNTs are mostly zig-zag, CNTs statistcally equivalent. </li>
+					<li> All BNNTs are semi-conducting, CNTs vary based on chirality </li>
+					<li> Cytotoxicity still being investigated for BNNTs </li>
+				</ul>
+					<aside class="notes">
+						<ul>
+							<li> Due to the more ionic bonds the vDW attractions are stronger </li>
+							<li> Carbon nanotube can be metallic or semi-conducting </li>
+							<li> Carbon nanotubes have been shown to be cytotoxic </li>
+							<li> BNNTS have shown mixed studies on toxicity </li>
+							</br>
+							<li> est.: 14:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Boron Nitride Nanotubes (Band Gap)</h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/BNNT_Chir.jpg"></img>
+					<aside class="notes">
+						<ul>
+							<li> Properties converge to the monolayer properties</li>
+							<li> The band gap is smaller than experimental data due to theory</li>
+							<li> Smallest tube visualized in a multiwall setting is about 7.5 &#8491;</li>
+							</br>
+							<li> est.: 16:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<img max-width:80%; max-height:80%; data-src="images/rimola.jpg"></img>
+					<fsize> <a href="https://doi.org/10.1039/c3cp51728d"> Rimola et. al. (2013) PCCP 15:13190</a></fsize>
+					<aside class="notes">
+						<ul>
+							<li> Probe molecules (Water, Ammonia, Formic Acid, Bezene, Methane) </li>
+							<li> All trends show stronger interactions with smaller tube</li>
+							<li> Aromatic molecules show larger energy with more surface area</li>
+							<li> Similar study was done with Amino Acids </li>
+							</br>
+							<li> est.: 18:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Biological Molecules</h2>
+					</div>
+					<ul>
+						<li>Carbohydrates </li>
+						<li>DNA (Nucleotides) </li>
+						<li>Lipids </li>
+						<li>Proteins (Amino Acids, Peptides) </li>
+						<li>etc. </li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li> What is meant by biological molecules, here are some examples</li>
+							</br>
+							<li> est.: 19:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Methods and Tools</h2>
+					</div>
+					<ul>
+						<li>Solving the system's electronic wavefunction</li>
+						<ul>
+							<li>Schr&ouml;dinger Equation
+								<script type="math/tex; mode=display">
+									\hat{H}\Psi(\vec{r}\hspace{0.05cm})=E\Psi(\vec{r}\hspace{0.05cm})
+								</script>
+							</li>
+							<li> Density Functional Theory (DFT)</li>
+							<li> Ab Initio Molecular Dynamics (AIMD)</li>
+							<li> High Performance Computing Platform </li>
+						</ul>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li> These are some of the tools and methods </li>
+							<li> The first step many-body Schr&ouml;dinger Equation </li>
+							<li> Post-Hatree-Fock Methods(Wavefunction) or DFT (Density) </li>
+							<li> Calculate the energy of the system and derive properties </li>
+							<li> Moving into the domain of dynamics </li>
+							</br>
+							<li> est.: 21:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+			</section>
+			<!-- Introduction End-->
+
+			<!-- Boron Nitride Nano/Bio -->
+			<section>
+				<section>
+					<div id="slideheader">
+						<h2>Amino Acids Conjugated with Boron Nitride Nanomaterials</h2>
+					</div>
+					<fsize> <a href="https://doi.org/10.1021/acsomega.6b00321"> Waters et. al. (2017) ACS Omega 2:76</a></fsize>
+					<aside class="notes">
+						<ul>
+							<li> First project </li>
+							</br>
+							<li> est.: 22:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Proteins</h2>
+					</div>
+					<table>
+						<tr>
+							<th style="border-bottom: 0">
+								<div id="appdiv1"></div>
+								<div id="jsmolbtnss"></div>
+								<div id="jsmolbtnsc"></div>
+							</th>
+						</tr>
+					</table>
+					<fsize>
+						<ufl>
+							<td> <a style="font-size: 14px" href="https://www.rcsb.org/structure/3V03"> pdb : 3V03 </a></td>
+						</ufl>
+					</fsize>
+					<aside class="notes">
+						<ul>
+							<li> Breaking down the problem </li>
+							<li> Peptide Chains  </li>
+							<li> Atoms </li>
+							<li> Amino Acids </li>
+							</br>
+							<li> est.: 24:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section>
+						<img max-width:80%; max-height:80%; data-src="images/amino.jpg"></img>
+					<aside class="notes">
+						<ul>
+							<li> 20 standard Amino Acids </li>
+							<li> Alpha-Amino Acids have the same backbone </li>
+							<li> Acid vs. Bases (pKa.) </li>
+						  <li> Non-Polar Polartiy, Aromatic </li>
+							</br>
+							<li> est.: 26:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section>
+					<img max-width:80%; max-height:80%; data-src="images/amino_analogues.jpg"></img>
+					<fsize> <a href="https://doi.org/10.1021/acsomega.6b00321"> Waters et. al. (2017) ACS Omega 2:76</a></fsize>
+					<aside class="notes">
+						<ul>
+							<li> Simulating Peptides chains </li>
+							<li> Backbone replaced by Methyl Groups </li>
+							<li> Reduced the complutation cost and methyl is inert compared to side groups</li>
+							</br>
+							<li> est.: 28:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<img width="95%" height="95%" ; data-src="images/ph_structures.jpg"></img>
+					<aside class="notes">
+						<ul>
+							<li> To take into account physiological conditions pH has to be simulated </li>
+							<li> Physiological pH is about 7.4 </li>
+							<li> We need to modify the structures to reflect the pKa of the Amino Acids </li>
+							</br>
+							<li> est.: 30:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> Conjugated Structures </h2>
+					</div>
+					<img width="45%" height="45%" ; data-src="images/BNNT_Trp_2.png"></img>
+					<img width="45%" height="45%" ; data-src="images/Sheet_Asp.png"></img>
+					<aside class="notes">
+						<ul>
+							<li> Conjugated Tryptophan structure on a (5,0) BNNT </li>
+							<li> Deprotonated Aspartic Acid on a h-BN </li>
+							</br>
+							<li> est.: 31:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Binding Energies</h2>
+					</div>
+					<img width="85%" height="85%" ; data-src="images/di_Bond.jpg"></img>
+					<aside class="notes">
+						<ul>
+							<li> Monolayer dictated by vdW interactions </li>
+							<li> Deprotonated amino acids had the strongest interactions</li>
+							<li> Arginine and Aspartic Acid would be protonated and deprotonated at pH 7.4 </li>
+							</br>
+							<li> est.: 33:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+			</section>
+			<!-- Boron Nitride Nano/Bio End -->
+
+			<!-- AIMD Work-->
+			<section>
+			</section>
+			<!-- AIMD Work End -->
+
+			<!-- Gold BN  -->
+			<section>
+
+				<section>
+					<h2>Gold Deposition on Boron Nitride Nanomaterials</h2>
+					<fsize> Waters et. al. (2018) In Prepartation </a>
+					</fsize>
+				<aside class="notes">
+					<ul>
+						<li> If time permits it</li>
+						</br>
+					</ul>
+				</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> Gold Quantum Dots on Boron Nitride </h2>
+					</div>
+					<img width="95%" height="95%" ; data-src="images/BNNT_Au_Dots.jpg"></img>
+					<div id="footer">
+						<fsize>
+							<a href="https://doi.org/10.1002/adma.201301339"> Lee et. al. (2013) Advanced Materials 25: 4544</a>
+						</fsize>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> Boron Nitride Nanotubes Functionalized with Gold Quantum Dots </h2>
+					</div>
+					<img width="35%" height="35%" ; data-src="images/Gold_QD_Schematics.jpg"></img>
+					<div id="footer">
+						<fsize>
+							<a href="https://doi.org/10.1002/adma.201301339"> Lee et. al. (2013) Advanced Materials 25: 4544</a>
+						</fsize>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Flakes on Boron Nitride </h2>
+					</div>
+					<img width="55%" height="55%" ; data-src="images/BNNT_Au_Macro_Circle.png"></img>
+					<div id="footer">
+						<fsize>
+							<p> Unpublished work from Bhandari et. al.</p>
+						</fsize>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Flakes on Boron Nitride </h2>
+					</div>
+					<img width="55%" height="55%" ; data-src="images/BNNT_Au_Micro_Scale.png"></img>
+					<fsize>
+						<p> Unpublished work from Bhandari et. al.</p>
+					</fsize>
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Cluster Structures</h2>
+					</div>
+					<table>
+						<tr>
+							<th style="border-bottom: 0;" align="center"> 2D </th>
+							<th style="border-bottom: 0;" align="center"> 3D </th>
+						</tr>
+						<tr>
+							<td><img width="95%" ; data-src="images/Gold_Clusters_2D.jpg"></td>
+							<td><img width="95%" ; data-src="images/Gold_Clusters_3D.jpg"></td>
+						</tr>
+					</table>
+					<fsize>
+						<ufl>
+							<li> Unpublished work from Waters et. al. </li>
+							<li> <a href="https://doi.org/10.1016/j.cplett.2004.05.095"> L. Xiao et al. (2004) Chemical Physics Letters 392, 452</a></li>
+							<li> <a href="https://doi.org/10.1063/1.2179419"> L. Xiao et al. (2006) The Journal of Chemical Physics 114309</a></li>
+							<li> <a href="https://doi.org/10.1063/1.3427293"> G. Chen et. al. (2010) The Journal of Chemical Physics 194306</a></li>
+						</ufl>
+					</fsize>
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Cluster Cohesive Energy </h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/Cohesive_Energy.jpg"></img>
+				<aside class="notes">
+					<ul>
+						<li> Transition from 2D to 3D stabilty</li>
+						<li> Different theories predict different transitions</li>
+						</br>
+					</ul>
+				</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Clusters on BN </h2>
+					</div>
+					<div class="column">
+						<ul>
+							<li> Substrate of h-BN </li>
+							<li> vDW Interactions</li>
+							<li> Deformation for 3D clusters</li>
+						</ul>
+					</div>
+					<div class="column">
+						<div style="align: left; position: absolute; top: 120px; right: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999; text-align: left; line-height: 0.6;">
+							<div id="appdiv3"></div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold/BN Binding Energies</h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/binding_energy.jpg"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Cluster Electronic Gap </h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/Gaps.jpg"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Conjugated Gold Cluster Electronic Gap </h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/Bare_BN.jpg"></img>
+				</section>
+			</section>
+			<!-- Gold BN End -->
+
+			<!--    BN2   -->
+			<section>
+
+				<section>
+					<h2>Mechanical Properties of 2D BN<sub>2</sub></h2>
+								<fsize> <a href="https://doi.org/10.1088/1361-648X/aaad96">Waters et. al. (2018) Journal of Physics: Condensed Matter 30: 13</a></fsize>
+								<aside class="notes">
+									<ul>
+										<li> est.: 34:00 </li>
+									</ul>
+								</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> Experimental Functionalization</h2>
+					</div>
+					<img max-width:80%; max-height:80%; data-src="images/cartoon_au_bnnt.png"></img>
+					</br>
+					<fsize> <a href="https://doi.org/10.1021/jp072958n"> Sainsbury et. al. (2007) JACS 111:12992</a></fsize>
+					<aside class="notes">
+						<ul>
+							<li> Generating defects for additional chemistries to occur </li>
+							<li> Ammonia Plasma (NH2) </li>
+							<li> Amine groups can be utilized for covalent and non-covalent interactions </li>
+							</br>
+							<li> est.: 35:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> BN Electronic Structure Evolution</h2>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th align="center">Coverage (%) </th>
+								<th align="center">Band Gap (eV) </th>
+								<th align="center">Binding Energy (eV) </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td align="right" style="border-bottom: 0;"> 0 </td>
+								<td align="right" style="border-bottom: 0;"> 4.25 </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+							</tr>
+							<tr>
+								<td align="right" style="border-bottom: 0;"> 16 </td>
+								<td align="right" style="border-bottom: 0;"> 3.34 </td>
+								<td align="right" style="border-bottom: 0;"> -0.74 </td>
+							</tr>
+							<tr>
+								<td align="right" style="border-bottom: 0;"> 25 </td>
+								<td align="right" style="border-bottom: 0;"> 3.11 </td>
+								<td align="right" style="border-bottom: 0;"> -0.70 </td>
+							</tr>
+							<tr>
+								<td align="right"> 50 </td>
+								<td align="right"> 2.25 </td>
+								<td align="right"> 0.72 </td>
+							</tr>
+						</tbody>
+					</table>
+					</br>
+					<img width="75%" height="75%" ; data-src="images/bn_nh2.jpg"></img>
+					<aside class="notes">
+						<ul>
+							</br>
+							<li> Increased the "doping" of the material surfaces </li>
+							<li> Interesting result when 50% coverage was simulated </li>
+							<li> est.: 37:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>BN<sub>2</sub> Monolayer</h2>
+					</div>
+					<div class="column">
+						<ul>
+							<li>Supercell : 2B + 4N</li>
+							<li>Symmetry : Amm2 (38)</li>
+							<li>Lattice Vectors </br>
+								<ul>
+									<li>a : 6.84 <span>&#8491;</span> </li>
+									<li>b : 2.55 <span>&#8491;</span> </li>
+								</ul>
+								<li> Bonds </li>
+								<ul>
+									<li> N-N : 1.29 <span>&#8491;</span> </li>
+									<li> N-B : 1.34 <span>&#8491;</span> </li>
+									<li> B-N : 1.50 <span>&#8491;</span> </li>
+								</ul>
+							<li> Stability : Phonon Spectra
+						</ul>
+					</div>
+					<div class="column">
+						<div style="align: left; position: absolute; top: 120px; right: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999; text-align: left; line-height: 0.6;">
+							<div id="appdiv2"></div>
+						</div>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li> est.: 39:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>BN<sub>2</sub> Band Structure (Orbital Projected) </h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/BN2_Orbital.jpg"></img>
+					<aside class="notes">
+						<ul>
+							<li> est.: 40:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Hooke's Law / Elastic Tensor</h2>
+					</div>
+					<h3>
+					<script type="math/tex; mode=display">
+						\boldsymbol{\sigma_{I}} =\boldsymbol{C_{IJ}\eta_{J}}
+					</script>
+				</h3>
+					</br>
+					<ul>
+						<li> <b>&sigma;<sub>I<sub></b> is the stress tensor </li>
+						<li> <b>C<sub>IJ<sub></b> is the elastic tensor </li>
+						<li> <b>&eta;<sub>J<sub></b> is the stain tensor </li>
+					</ul>
+					<script type="math/tex; mode=display">
+						\big[\boldsymbol{\sigma_{I}\eta_{J}^{+}}\big]^{T}\approx{\boldsymbol{C_{IJ}}}
+					</script>
+					<aside class="notes">
+						<ul>
+							<li> est.: 42:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Orthorhombic Symmetry in 2D</h2>
+					</div>
+					<script type="math/tex; mode=display">
+						C_{IJ} = \begin{bmatrix} C_{11} & C_{12} & 0 \\ & C_{22} & 0 \\ & & C_{66} \\ \end{bmatrix}
+					</script>
+					<aside class="notes">
+						<ul>
+							<li> est.: 43:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Results</h2>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th align="center">N/m</th>
+								<th align="center">Graphene<sup>1</sup></th>
+								<th align="center">This Work</th>
+								<th align="center">BN<sup>2</sup></th>
+								<th align="center">This Work</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="border-bottom: 0;">C<sub>11</sub> </td>
+								<td align="right" style="border-bottom: 0;">358.1 </td>
+								<td align="right" style="border-bottom: 0;">353.7 </td>
+								<td align="right" style="border-bottom: 0;">293.2 </td>
+								<td align="right" style="border-bottom: 0;">290.5 </td>
+								<td align="right" style="border-bottom: 0;"></td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;">C<sub>12</sub> </td>
+								<td align="right" style="border-bottom: 0;">60.4 </td>
+								<td align="right" style="border-bottom: 0;">61.7 </td>
+								<td align="right" style="border-bottom: 0;">66.1 </td>
+								<td align="right" style="border-bottom: 0;">64.4 </td>
+								<td align="right" style="border-bottom: 0;"></td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;">C<sub>22</sub> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"></td>
+							</tr>
+							<tr align="right">
+								<td>C<sub>66</sub> </td>
+								<td align="right" style="border-bottom: 0;">148.9</td>
+								<td align="right" style="border-bottom: 0;">144.9 </td>
+								<td align="right" style="border-bottom: 0;">113.5</td>
+								<td align="right" style="border-bottom: 0;">113.1</td>
+								<td align="right" style="border-bottom: 0;"></td>
+							</tr>
+						</tbody>
+						</br>
+					</table>
+					<div id="footer">
+						<fsize>
+							<fl>
+								<li><a href="https://doi.org/10.1103/PhysRevB.80.205407"> Wei et. al. (2009) Physical Review B 80: 205407</a> </li>
+								<li><a href="https://doi.org/10.1016/j.commatsci.2011.12.029"> Peng et. al. (2012) Computational Materials Science 56: 11 </a> </li>
+							</fl>
+						</fsize>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li> Select properties are shown for an overview. </li>
+							<li> Graphene properties compared well with experiment (Young's Modulus)</li>
+						</br>
+							<li> est.: 45:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Results</h2>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th align="center">N/m</th>
+								<th align="center">Graphene<sup>1</sup></th>
+								<th align="center">BN<sup>2</sup></th>
+								<th align="center">BN<sub>2</sub></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="border-bottom: 0;">C<sub>11</sub> </td>
+								<td align="right" style="border-bottom: 0;">358.1 </td>
+								<td align="right" style="border-bottom: 0;">293.2 </td>
+								<td align="right" style="border-bottom: 0;">368.8</td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;">C<sub>12</sub> </td>
+								<td align="right" style="border-bottom: 0;">60.4 </td>
+								<td align="right" style="border-bottom: 0;">66.1 </td>
+								<td align="right" style="border-bottom: 0;">47.2</td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;">C<sub>22</sub> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;">153.3</td>
+							</tr>
+							<tr align="right">
+								<td>C<sub>66</sub> </td>
+								<td align="right" style="border-bottom: 0;">148.9</td>
+								<td align="right" style="border-bottom: 0;">113.5</td>
+								<td align="right" style="border-bottom: 0;">58.7</td>
+							</tr>
+						</tbody>
+						</br>
+					</table>
+					<div id="footer">
+						<fsize>
+							<fl>
+								<li><a href="https://doi.org/10.1103/PhysRevB.80.205407"> Wei et. al. (2009) Physical Review B 80: 205407</a> </li>
+								<li><a href="https://doi.org/10.1016/j.commatsci.2011.12.029"> Peng et. al. (2012) Computational Materials Science 56: 11 </a> </li>
+							</fl>
+						</fsize>
+					</div>
+					<aside class="notes">
+						<ul>
+							<li> est.: 47:00 </li>
+						</ul>
+					</aside>
+				</section>
+
+			</section>
+			<!--    BN2 end   -->
+
+			<!-- Exact Exchange -->
+			<section>
+			</section>
+			<!-- Exact Exchange End -->
+
+			<!-- Current/Future -->
+			<section>
+				<div id="slideheader">
+					<h2>Current/Future Work</h2>
+				</div>
+				<ul>
+					<li class="fragment"> Improve accuracy for the exact exchange integral in PBC (NWChem)</li>
+					<li class="fragment"> AIMD studies on the peptide/BNNTs interface in a solvated environment</li>
+					<li class="fragment"> Test plane-wave AIMD simulations with O(N) DFT methods</li>
+				</ul>
+				<img style="float:right;width:55%;height:55%;" data-src="images/BSA_BNNT_2.png"></img>
+			</section>
+
+			<!-- Current/Future End-->
+
+			<!-- Challenges -->
+			<section>
+				<h2>Challenges</h2>
+				<ul>
+					<li class="fragment">Computation power (Hardware/Software) </li>
+					<li class="fragment">Scaling of theories (CCSD vs. DFT vs. MD) </li>
+					<li class="fragment">Inclusion of all releveant parameters (ions, solution, pH, etc.) </li>
+					<li class="fragment">Asking the right questions </li>
+				</ul>
+			</section>
+			<!-- Challenges End-->
+
+			<!-- Conclusion -->
+			<section>
+				<h2>Conclusion</h2>
+				<ul>
+					<li class="fragment">Laid the foundation for protein BNNT simulations </li>
+					<li class="fragment">Started to investigate functionalized structures </li>
+					<li class="fragment">Building framework for future large scale applications </li>
+					<li class="fragment">Flexibility to look at similar structures (e.g. Polymers) </li>
+				</ul>
+			</section>
+			<!-- Conclusion End-->
+
+			<!-- Acknowledgements -->
+			<section>
+				<h2>Acknowledgements</h2>
+				<ul>
+					<li> Ravindra Pandey </li>
+					<li> Eric Bylasksa </li>
+					<li> Gregory Odegard </li>
+					<li> Nabanita Saikia </li>
+					<li> Max Seel </li>
+					<li> Wil Slough </li>
+					<li> Yoke Khin Yap </li>
+				</ul>
+			</section>
+			<!-- Acknowledgements End -->
+
+			<!-- Questions -->
+			<section>
+				<h2>Questions</h2>
+			</section>
+			<!-- Questions -->
+
+			<script src="lib/js/head.min.js"></script>
+			<script src="js/reveal.js"></script>
+
+			<script>
+				// More info about config & dependencies:
+				// - https://github.com/hakimel/reveal.js#configuration
+				// - https://github.com/hakimel/reveal.js#dependencies
+				Reveal.initialize({
+					math: {
+						// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+						config: 'TeX-AMS_HTML-full'
+					},
+					dependencies: [
+						//				{ src: 'plugin/notes/notes.js', async: true }
+						{
+							src: 'lib/js/classList.js'
+						},
+						{
+							src: 'plugin/math/math.js',
+							async: true
+						},
+						{
+							src: 'plugin/notes/notes.js',
+							async: true
+						},
+						{
+							src: 'plugin/zoom-js/zoom.js',
+							async: true
+						}
+						//				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					]
+				});
+			</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1305 @@
+<!doctype html>
+<html>
+
+<head>
+
+	</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>ARL Postdoc Presentation</title>
+	<meta name="description" content="Post Doc Presentation">
+	<meta name="author" content="Kevin Waters">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<script type="text/javascript" src="plugin/jsmol/JSmol.min.js"></script>
+
+	<script type="text/javascript" src="molecules/molecules.js"></script>
+
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<!-- Title -->
+			<section>
+				<h2>An Investigation of Boron Nitride Nanomaterial Functionalization  </h2>
+				<p>
+					<small> At the Army Research Laboratory </small>
+				</p>
+				<p>
+					<small>by <a href="https://kwaters4.github.io/">Kevin Waters</a></small>
+				</p>
+			</section>
+			<!-- Title End -->
+
+			<!-- Who am I? -->
+			<section>
+				<div id="slideheader">
+					<h2>Who am I?</h2>
+				</div>
+				<ul>
+					<li> Computational "Physicist" </li>
+					<li> Started at Michigan Tech. in 2013 </li>
+					<li> Working with Ravindra Pandey </li>
+					<li> Currently at PNNL on a Fellowship </li>
+					<li> Defending in August </li>
+				</ul>
+				<img style="float:right;width:25%;height:25%;" data-src="images/mtu.png"></img>
+				</br>
+				<img style="float:right;width:25%;height:25%;" data-src="images/pnnl.png"></img>
+			</section>
+			<!-- Who am I? End -->
+
+			<!-- Introduction -->
+			<section>
+				<section>
+					<div id="slideheader">
+						<h2>Hypothesis</h2>
+					</div>
+					"We can accurately predict the interface between biological molecule and nanomaterials in physiological conditions."
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>Nanomaterials</h2>
+					</div>
+					<p>Materials with at least one dimension in the sub-micron range.</p>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Nanomaterials</h2>
+					</div>
+					<ul>
+						<li>Ratio of surface to bulk atoms changes</li>
+						<li>Bulk properties are not present at this scale</li>
+						<li>Adding one atom changes the properties of the material</li>
+						<li>Exhaustive searches and research must be done </li>
+					</ul>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Morphological Dependent Properties</h2>
+					</div>
+					<div class="row">
+						<div class="column">
+							<ul>
+								<li> Clusters </li>
+								<li> Nanoparticles </li>
+								<li> Fullerenes </li>
+								<li> Nanotubes </li>
+								<li> 2D-Materials </li>
+							</ul>
+						</div>
+						<div class="column">
+							<img max-width:40%; max-height:40%; data-src="images/Nanomaterials.jpg"></img>
+						</div>
+					</div>
+					<fsize>
+						<ufl>
+							<li><a href="https://doi.org/10.1038/nmat1849"> A. K. Geim et. al Nature Materials (2007) 6: 183 </a> </li>
+						</ufl>
+					</fsize>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Boron Nitride Nanotubes</h2>
+					</div>
+					<div class="row">
+						<div class="column">
+							<ul>
+								<li>Predicted by 1994</li>
+								<li>Synthesized in 1995</li>
+								<li>Typically considred a wide band gap semiconductor</li>
+								<li>Parameters to consider</li>
+								<ul>
+									<li>Chirality (n,n), (n,0), (n,m)</li>
+									<li>Diameter</li>
+									<li>Layers</li>
+								</ul>
+							</ul>
+						</div>
+						<div class="column">
+							<div id="appdiv5"></div>
+						</div>
+					</div>
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>Boron Nitride Nanotubes</h2>
+					</div>
+					<img max-width:40%; max-height:40%; data-src="images/Zig_Arm.png"></img>
+					<fsize>
+						<ufl>
+							<li><a href="https://phlebas.co/2015/06/17/a-primer-on-carbon-nanotubes-part-1/"> Steel, "A Primer on Carbon Nanotubes – Part 1"</a> </li>
+						</ufl>
+					</fsize>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Boron Nitride Nanotubes (Band Gap)</h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/BNNT_Chir.jpg"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Boron Nitride Nanotubes (Strain Energy)</h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/BNNT_Chir_Strain.jpg"></img>
+				</section>
+
+				<section>
+					<img max-width:80%; max-height:80%; data-src="images/rimola.jpg"></img>
+					<fsize> <a href="https://doi.org/10.1039/c3cp51728d"> Rimola et. al. (2013) PCCP 15:13190</a></fsize>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Biological Molecules</h2>
+					</div>
+					<ul>
+						<li>Carbohydrates </li>
+						<li>DNA (Nucleotides) </li>
+						<li>Lipids </li>
+						<li>Proteins (Amino Acids, Peptides) </li>
+						<li>etc. </li>
+					</ul>
+					<!img style="float:right;width:25%;height:25%;" data-src="images/mtu.png">
+					<!/img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Methods and Tools</h2>
+					</div>
+					<ul>
+						<li>Solving the system's electronic wavefunction</li>
+						<ul>
+							<li>Schr&ouml;dinger Equation
+								<script type="math/tex; mode=display">
+									\hat{H}\Psi(\vec{r}\hspace{0.05cm})=E\Psi(\vec{r}\hspace{0.05cm})
+								</script>
+							</li>
+							<li> Density Functional Theory (DFT)</li>
+							<li> Ab Initio Molecular Dynamics (AIMD)</li>
+							<li> High Performance Computing Platform </li>
+						</ul>
+					</ul>
+				</section>
+
+			</section>
+			<!-- Introduction End-->
+
+			<!-- Boron Nitride Nano/Bio -->
+			<section>
+				<section>
+					<div id="slideheader">
+						<h2>Conjugated Boron Nitride Nanomaterials</h2>
+					</div>
+					<fsize> <a href="https://doi.org/10.1021/acsomega.6b00321"> Waters et. al. (2017) ACS Omega 2:76</a></fsize>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Proteins</h2>
+					</div>
+					<table>
+						<tr>
+							<th style="border-bottom: 0">
+								<div id="appdiv1"></div>
+								<div id="jsmolbtnss"></div>
+								<div id="jsmolbtnsc"></div>
+							</th>
+						</tr>
+					</table>
+					<fsize>
+						<ufl>
+							<td> <a style="font-size: 14px" href="https://www.rcsb.org/structure/3V03"> pdb : 3V03 </a></td>
+						</ufl>
+					</fsize>
+				</section>
+
+				<section>
+					<img max-width:80%; max-height:80%; data-src="images/amino.jpg"></img>
+				</section>
+
+
+				<section>
+					<img max-width:80%; max-height:80%; data-src="images/amino_analogues.jpg"></img>
+					<fsize> <a href="https://doi.org/10.1021/acsomega.6b00321"> Waters et. al. (2017) ACS Omega 2:76</a></fsize>
+				</section>
+
+				<section>
+					<img width="95%" height="95%" ; data-src="images/ph_structures.jpg"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> Conjugated Structures </h2>
+					</div>
+					<img width="45%" height="45%" ; data-src="images/BNNT_Trp_2.png"></img>
+					<img width="45%" height="45%" ; data-src="images/Sheet_Asp.png"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Binding Energies</h2>
+					</div>
+					<img width="85%" height="85%" ; data-src="images/di_bond.jpg"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Binding Energies</h2>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th align="center" colspan="4"> BNML (eV)</th>
+							</tr>
+							<tr>
+								<th> </th>
+								<th> </th>
+								<th> Pro. </th>
+								<th> Dep. </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="border-bottom: 0;"> Trp </td>
+								<td style="border-bottom: 0;"> -1.04 </td>
+								<td style="border-bottom: 0;"> </td>
+								<td style="border-bottom: 0;"> </td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;"> Arg </td>
+								<td style="border-bottom: 0;"> </td>
+								<td style="border-bottom: 0;"> -0.92 </td>
+								<td style="border-bottom: 0;"> -0.96 </td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;"> Asp </td>
+								<td style="border-bottom: 0;"> </td>
+								<td style="border-bottom: 0;"> -0.55 </td>
+								<td style="border-bottom: 0;"> -0.57 </td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table>
+						<thead>
+							<tr>
+								<th align="center" colspan="4"> BNNT</th>
+							</tr>
+							<tr>
+								<th> </th>
+								<th> </th>
+								<th> Pro. </th>
+								<th> Dep. </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="border-bottom: 0;"> Trp </td>
+								<td style="border-bottom: 0;"> -0.71 </td>
+								<td style="border-bottom: 0;"> </td>
+								<td style="border-bottom: 0;"> </td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;"> Arg </td>
+								<td style="border-bottom: 0;"> </td>
+								<td style="border-bottom: 0;"> -0.85 </td>
+								<td style="border-bottom: 0;"> -2.12 </td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;"> Asp </td>
+								<td style="border-bottom: 0;"> </td>
+								<td style="border-bottom: 0;"> -0.89 </td>
+								<td style="border-bottom: 0;"> -2.17 </td>
+							</tr>
+						</tbody>
+					</table>
+
+				</section>
+			</section>
+			<!-- Boron Nitride Nano/Bio End -->
+
+			<!--    BN2   -->
+			<section>
+
+				<section>
+					<h2>Mechanical Properties of 2D BN<sub>2</sub></h2>
+					<fsize> <a href="https://doi.org/10.1088/1361-648X/aaad96">Waters et. al. (2018) Journal of Physics: Condensed Matter 30: 13</a></fsize>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> Chemical Functionalization </h2>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> Experimental Functionalization</h2>
+					</div>
+					<img max-width:80%; max-height:80%; data-src="images/cartoon_au_bnnt.png"></img>
+					</br>
+					<fsize> <a href="https://doi.org/10.1039/c3cp51728d"> Sainsbury et. al. (2007) JACS 111:12992</a></fsize>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> BN Electronic Structure Evolution</h2>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th align="center">Coverage (%) </th>
+								<th align="center">Band Gap (eV) </th>
+								<th align="center">Binding Energy (eV) </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td align="right" style="border-bottom: 0;"> 0 </td>
+								<td align="right" style="border-bottom: 0;"> 4.25 </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+							</tr>
+							<tr>
+								<td align="right" style="border-bottom: 0;"> 16 </td>
+								<td align="right" style="border-bottom: 0;"> 3.34 </td>
+								<td align="right" style="border-bottom: 0;"> -0.74 </td>
+							</tr>
+							<tr>
+								<td align="right" style="border-bottom: 0;"> 25 </td>
+								<td align="right" style="border-bottom: 0;"> 3.11 </td>
+								<td align="right" style="border-bottom: 0;"> -0.70 </td>
+							</tr>
+							<tr>
+								<td align="right"> 50 </td>
+								<td align="right"> 2.25 </td>
+								<td align="right"> 0.72 </td>
+							</tr>
+						</tbody>
+					</table>
+					</br>
+					<img width="75%" height="75%" ; data-src="images/bn_nh2.jpg"></img>
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>BN<sub>2</sub> Monolayer</h2>
+					</div>
+					<div class="column">
+						<ul>
+							<li>Atoms 2B + 4N</li>
+							<li>Symmetry : Amm2 (38)</li>
+							<li>Lattice Vectors </br>
+								<ul>
+									<li>a : 6.84 <span>&#8491;</span> </li>
+									<li>b : 2.55 <span>&#8491;</span> </li>
+								</ul>
+								<li> Bonds </li>
+								<ul>
+									<li> N-N : 1.29 <span>&#8491;</span> </li>
+									<li> B-N : 1.50 <span>&#8491;</span> </li>
+									<li> N-B : 1.34 <span>&#8491;</span> </li>
+								</ul>
+						</ul>
+					</div>
+					<div class="column">
+						<div style="align: left; position: absolute; top: 120px; right: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999; text-align: left; line-height: 0.6;">
+							<div id="appdiv2"></div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>BN<sub>2</sub> Band Structure (Orbital Projected) </h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/BN2_Orbital.jpg"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>BN<sub>2</sub> Band Structure (Atom Projected) </h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/BN2_Bonds.jpg"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Hooke's Law / Elastic Tensor</h2>
+					</div>
+					<h3>
+					<script type="math/tex; mode=display">
+						\boldsymbol{\sigma_{ij}} =\boldsymbol{C_{ijkl}\epsilon_{kl}}
+					</script>
+				</h3>
+					</br>
+					<ul>
+						<li> <b>&sigma;<sub>ij<sub></b> is the stress tensor </li>
+						<li> <b>C<sub>ijkl<sub></b> is the elastic tensor </li>
+						<li> <b>&epsilon;<sub>kl<sub></b> is the stain tensor </li>
+					</ul>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Elastic Tensor</h2>
+					</div>
+					<script type="math/tex; mode=display">
+						C_{IJ} = \begin{bmatrix} C_{11} & C_{12} & C_{13} & C_{14} & C_{15} & C_{16} \\ & C_{22} & C_{23} & C_{24} & C_{25} & C_{26} \\ & & C_{33} & C_{34} & C_{35} & C_{36} \\ & & & C_{44} & C_{45} & C_{46} \\ & & & & C_{55} & C_{56} \\ & & & & & C_{66} \\ \end{bmatrix}
+					</script>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Orthorhombic Symmetry (Amm2)</h2>
+					</div>
+					<script type="math/tex; mode=display">
+						C_{IJ} = \begin{bmatrix} C_{11} & C_{12} & C_{13} & 0 & 0 & 0 \\ & C_{22} & C_{23} & 0 & 0 & 0 \\ & & C_{33} & 0 & 0 & 0 \\ & & & C_{44} & 0 & 0 \\ & & & & C_{55} & 0 \\ & & & & & C_{66} \\ \end{bmatrix}
+					</script>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Orthorhombic Symmetry in 2D</h2>
+					</div>
+					<script type="math/tex; mode=display">
+						C_{IJ} = \begin{bmatrix} C_{11} & C_{12} & 0 \\ & C_{22} & 0 \\ & & C_{66} \\ \end{bmatrix}
+					</script>
+				</section>
+				<section>
+					<div id="slideheader">
+						<h2>Deformation Matrices</h2>
+					</div>
+					<table>
+						<tr>
+							<td style="border-bottom: 0;">
+								<script type="math/tex; mode=display">
+									\boldsymbol{F_{11}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{11} & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \\ \end{array} \right] \\
+								</script>
+							</td>
+							<td style="border-bottom: 0;">
+								<script type="math/tex; mode=display">
+									\boldsymbol{F_{22}} = \left[ \begin{array}{*4{C{1em}}} 1 & 0 & 0 \\ 0 &\lambda_{22} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\
+								</script>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<script type="math/tex; mode=display">
+									\boldsymbol{F_{66}} = \left[ \begin{array}{*4{C{1em}}} \lambda_{66} & 0 & 0 \\ 0 & \lambda_{66} & 0 \\ 0 & 0 & 1 \\ \end{array} \right]\\
+								</script>
+							</td>
+							<td>
+								<script type="math/tex; mode=display">
+									\boldsymbol{F_{12}} = \left[ \begin{array}{*4{C{1em}}} 1 & \epsilon_{12} & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{array}\right]\\
+								</script>
+							</td>
+						</tr>
+					</table>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Workflow</h2>
+					</div>
+					<ul>
+						<li>-2% to 2% in steps of 0.2% </li>
+						<li> Generate optimized structure </li>
+						<li> Apply deformation matrix to optimized structure </li>
+						<li> Optimized atoms with modified unit cell </li>
+						<li> Extract Cauchy stress data (&sigma;<sub>ij</sub>) </li>
+						<li> Calculate mechanical properties of interest </li>
+					</ul>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Properties Derived from Elastic Constants</h2>
+					</div>
+					<script type="math/tex; mode=display">
+						E_{arm} = \frac{C_{11}C_{22} - C_{12}C_{12}}{C_{11}} \\ E_{zig} = \frac{C_{11}C_{22} - C_{12}C_{12}}{C_{22}}
+					</script>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Results</h2>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th align="center">N/m</th>
+								<th align="center">Graphene<sup>1</sup></th>
+								<th align="center">This Work</th>
+								<th align="center">BN<sup>2</sup></th>
+								<th align="center">This Work</th>
+								<th align="center">BN<sub>2</sub></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td style="border-bottom: 0;">C<sub>11</sub> </td>
+								<td align="right" style="border-bottom: 0;">358.1 </td>
+								<td align="right" style="border-bottom: 0;">353.7 </td>
+								<td align="right" style="border-bottom: 0;">293.2 </td>
+								<td align="right" style="border-bottom: 0;">290.5 </td>
+								<td align="right" style="border-bottom: 0;">368.8</td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;">C<sub>12</sub> </td>
+								<td align="right" style="border-bottom: 0;">60.4 </td>
+								<td align="right" style="border-bottom: 0;">61.7 </td>
+								<td align="right" style="border-bottom: 0;">66.1 </td>
+								<td align="right" style="border-bottom: 0;">64.4 </td>
+								<td align="right" style="border-bottom: 0;">47.2</td>
+							</tr>
+							<tr align="right">
+								<td style="border-bottom: 0;">C<sub>22</sub> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;">153.3</td>
+							</tr>
+							<tr align="right">
+								<td>C<sub>66</sub> </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;">144.9 </td>
+								<td align="right" style="border-bottom: 0;"> </td>
+								<td align="right" style="border-bottom: 0;">113.1</td>
+								<td align="right" style="border-bottom: 0;">58.7</td>
+							</tr>
+						</tbody>
+						</br>
+					</table>
+					<div id="footer">
+						<fsize>
+							<fl>
+								<li><a href="https://doi.org/10.1103/PhysRevB.80.205407"> Wei et. al. (2009) Physical Review B 80: 205407</a> </li>
+								<li><a href="https://doi.org/10.1016/j.commatsci.2011.12.029"> Peng et. al. (2012) Computational Materials Science 56: 11 </a> </li>
+							</fl>
+						</fsize>
+					</div>
+				</section>
+			</section>
+			<!--    BN2 end   -->
+
+			<!--    PEEK   -->
+			<section>
+
+				<section>
+					<h2>Mechanical Properties of Crystalline Poly Ether Ether Ketone (PEEK)</h2>
+					<fsize> Pisani et. al. (2018) In Prepartation </a>
+					</fsize>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> US-COMP </h2>
+					</div>
+					<ul>
+						<li> The Institute for Ultra-Strong Composites by Computational Design </li>
+						<li> NASA Space Technology Research Institute </li>
+						<li> Computationally-driven development of CNT-based ultra high strength lightweight structural materials </li>
+						<li> Project lead by Dr. Odegard at Michigan Tech.
+					</ul>
+					<img style="float:right;width:25%;height:25%;" data-src="images/nasa.png"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> PEEK </h2>
+					</div>
+					<ul>
+						<li> Polyether ether ketone </li>
+						<li> Investigating properties of the polymer future applications
+							<li> ReaxxFF force field testing and validation </li>
+							<li> Comparing crystalline classical MD with DFT calculations </li>
+							<li> Challenging to model Amorphous PEEK with electron approach </li>
+					</ul>
+					<img style="float:right;width:55%;height:55%;" data-src="images/PEEK.png"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>PEEK Structure </h2>
+					</div>
+					<div class="row">
+						<div class="column">
+							<ul>
+								<li>O<sub>12</sub>C<sub>48</sub>H<sub>78</sub></li>
+								<li>Symmetry : Pbcn (60)</li>
+								<li>Lattice Vectors </br>
+									<ul>
+										<li>a : 7.38 <span>&#8491;</span> </li>
+										<li>b : 5.92 <span>&#8491;</span> </li>
+										<li>c : 30.09 <span>&#8491;</span> </li>
+									</ul>
+							</ul>
+							</br>
+							</br>
+							</br>
+							<div id="footer">
+								<fsize>
+									XRD:<a href="https://doi.org/10.1016/0032-3861(86)90295-8"> Fratini et. al. (1986) Polymer 27: 861</a>
+								</fsize>
+							</div>
+						</div>
+						<div class="column">
+							<div style="align: left; position: absolute; top: 120px; right: 10px; height: 500px; width: 500px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; background-color: white; padding: 4px; z-index:9999; text-align: left; line-height: 0.6;">
+								<div id="appdiv4"></div>
+							</div>
+						</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Orthorhombic Symmetry (Pbcn)</h2>
+					</div>
+					<script type="math/tex; mode=display">
+						C_{IJ} = \begin{bmatrix} C_{11} & C_{12} & C_{13} & 0 & 0 & 0 \\ & C_{22} & C_{23} & 0 & 0 & 0 \\ & & C_{33} & 0 & 0 & 0 \\ & & & C_{44} & 0 & 0 \\ & & & & C_{55} & 0 \\ & & & & & C_{66} \\ \end{bmatrix}
+					</script>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>PEEK Elastic Constants </h2>
+					</div>
+					<script type="math/tex; mode=display">
+						C_{IJ} = \begin{bmatrix} 133.3 & 15.3 & 2.6 & 0 & 0 & 0 \\ 11.0 & 15.5 & 6.1 & 0 & 0 & 0 \\ 1.7 & 12.7 & 15.3 & 0 & 0 & 0 \\ & & & 14.0 & 0 & 0 \\ & & & & 9.0 & 0 \\ & & & & & 4.8 \\ \end{bmatrix}
+					</script>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> Elastic Constants </h2>
+					</div>
+					<table style="font-size:	22px">
+						<thead>
+							<tr>
+								<th>(GPa)</th>
+								<th align="center">MD</th>
+								<th align="center">DFT</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td align="left" style="border-bottom: 0;"> C<sub>11<sub>  </td>
+								<td align="center" style="border-bottom: 0;">140.5 ± 7.31 </td>
+								<td align="center" style="border-bottom: 0;">133.3 </td>
+							</tr>
+							<tr>
+								<td align="left" style="border-bottom: 0;"> C<sub>22<sub> </td>
+								<td align="center" style="border-bottom: 0;">4.87 ± 1.56 </td>
+								<td align="center" style="border-bottom: 0;">15.5 </td>
+							</tr>
+							<tr>
+								<td align="left" style="border-bottom: 0;"> C<sub>33<sub> </td>
+								<td align="center" style="border-bottom: 0;">7.18 ± 1.34 </td>
+								<td align="center" style="border-bottom: 0;"> 24 </td>
+							</tr>
+							<tr>
+								<td align="left" style="border-bottom: 0;"> C<sub>44<sub> </td>
+								<td align="center" style="border-bottom: 0;">0.24 ± 0.16 </td>
+								<td align="center" style="border-bottom: 0;"> 14.0 </td>
+							</tr>
+							<tr>
+								<td align="left" style="border-bottom: 0;"> C<sub>55<sub> </td>
+								<td align="center" style="border-bottom: 0;">3.79 ± 3.00 </td>
+								<td align="center" style="border-bottom: 0;"> 9.0 </td>
+							</tr>
+							<tr>
+								<td align="left" style="border-bottom: 0;"> C<sub>66<sub> </td>
+								<td align="center" style="border-bottom: 0;">3.37 ± 0.36 </td>
+								<td align="center" style="border-bottom: 0;"> 4.8 </td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> Poisson's Ratio </h2>
+					</div>
+					<table style="font-size:	22px">
+						<theader>
+							<tr>
+								<th> </th>
+								<th align="center">MD</th>
+								<th align="center">DFT</th>
+							</tr>
+						</theader>
+						<tbody>
+							<tr>
+								<td align="left" style="border-bottom: 0;"> &nu;<sub>12<sub> </td>
+								<td align="center" style="border-bottom: 0;">0.88 ± 0.24 </td>
+								<td align="center" style="border-bottom: 0;"> 0.38 </td>
+							</tr>
+							<tr>
+								<td align="left" style="border-bottom: 0;"> &nu;<sub>13<sub> </td>
+								<td align="center" style="border-bottom: 0;">-0.01 ± 0.58 </td>
+								<td align="center" style="border-bottom: 0;"> -0.33 </td>
+							</tr>
+							<tr>
+								<td align="left" style="border-bottom: 0;"> &nu;<sub>23<sub> </td>
+								<td align="center" style="border-bottom: 0;">0.50 ± 0.12 </td>
+								<td align="center" style="border-bottom: 0;"> 0.38 </td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
+			</section>
+			<!--    PEEK end   -->
+
+			<!-- Gold BN  -->
+			<section>
+
+				<section>
+					<h2>Gold Deposition Boron Nitride Nanomaterials</h2>
+					<fsize> Waters et. al. (2018) In Prepartation </a>
+					</fsize>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> Gold Quantum Dots on Boron Nitride </h2>
+					</div>
+					<img width="95%" height="95%" ; data-src="images/BNNT_Au_Dots.jpg"></img>
+					<div id="footer">
+						<fsize>
+							<a href="https://doi.org/10.1002/adma.201301339"> Chee et. al. (2013) Advanced Materials 25: 4544</a>
+						</fsize>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2> Boron Nitride Nanotubes Functionalized with Gold Quantum Dots </h2>
+					</div>
+					<img width="35%" height="35%" ; data-src="images/Gold_QD_Schematics.jpg"></img>
+					<div id="footer">
+						<fsize>
+							<a href="https://doi.org/10.1002/adma.201301339"> Chee et. al. (2013) Advanced Materials 25: 4544</a>
+						</fsize>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Flakes on Boron Nitride </h2>
+					</div>
+					<img width="55%" height="55%" ; data-src="images/BNNT_Au_Macro_Circle.png"></img>
+					<div id="footer">
+						<fsize>
+							<p> Unpublished work from Bhandari et. al.</p>
+						</fsize>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Flakes on Boron Nitride </h2>
+					</div>
+					<img width="55%" height="55%" ; data-src="images/BNNT_Au_Micro_Scale.png"></img>
+					<fsize>
+						<p> Unpublished work from Bhandari et. al.</p>
+					</fsize>
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Cluster Structures</h2>
+					</div>
+					<table>
+						<tr>
+							<th style="border-bottom: 0;" align="center"> 2D </th>
+							<th style="border-bottom: 0;" align="center"> 3D </th>
+						</tr>
+						<tr>
+							<td><img width="95%" ; data-src="images/Gold_Clusters_2D.jpg"></td>
+							<td><img width="95%" ; data-src="images/Gold_Clusters_3D.jpg"></td>
+						</tr>
+					</table>
+					<fsize>
+						<ufl>
+							<li> Unpublished work from Waters et. al. </li>
+							<li> <a href="https://doi.org/10.1016/j.cplett.2004.05.095"> L. Xiao et al. (2004) Chemical Physics Letters 392, 452</a></li>
+							<li> <a href="https://doi.org/10.1063/1.2179419"> L. Xiao et al. (2006) The Journal of Chemical Physics 114309</a></li>
+							<li> <a href="https://doi.org/10.1063/1.3427293"> G. Chen et. al. (2010) The Journal of Chemical Physics 194306</a></li>
+						</ufl>
+					</fsize>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Clusters Structural Parameters</h2>
+					</div>
+					<table style="font-size:	22px">
+						<thead>
+							<tr>
+								<th></th>
+								<th align="center" colspan="2">2D Cluster
+								</th>
+							</tr>
+							<tr>
+								<th>Structure</th>
+								<th>Avg. Bond (&#x212B;)</th>
+								<th>Bonds (#)</th>
+								<th>Symmetry</th>
+							</tr>
+							<tr>
+						</thead>
+						<td align="left">Au<sub>6</sub> </td>
+								<td align="center">2.69 </td>
+								<td align="center"> 9 </td>
+								<td align="center"> D<sub>3h</sub> </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>10</sub> </td>
+								<td align="center">2.71 </td>
+								<td align="center"> 19</td>
+								<td align="center"> D<sub>2h</sub> </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>12</sub> </td>
+								<td align="center">2.71 </td>
+								<td align="center"> 24 </td>
+								<td align="center"> D<sub>3h</sub> </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>14</sub> </td>
+								<td align="center">2.71 </td>
+								<td align="center"> 29 </td>
+								<td align="center"> D<sub>2h</sub> </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>16</sub> </td>
+								<td align="center">2.72 </td>
+								<td align="center"> 34 </td>
+								<td align="center"> C<sub>s</sub> </td>
+							</tr>
+							<tbody>
+					</table>
+
+					<table style="font-size:	22px">
+						<thead>
+							<tr>
+								<th></th>
+								<th align="center" colspan="2">3D Cluster
+									<th>
+							</tr>
+							<tr>
+								<th>Structure</th>
+								<th>Avg. Bond (&#x212B;)</th>
+								<th>Bonds (#)</th>
+								<th>Symmetry</th>
+							</tr>
+						</thead>
+						<tr>
+							<td align="left">Au<sub>6</sub> </td>
+							<td align="center">2.73 </td>
+							<td align="center"> 10 </td>
+							<td align="center"> C<sub>s</sub> </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>10</sub> </td>
+							<td align="center">2.72 </td>
+							<td align="center"> 23 </td>
+							<td align="center"> C<sub>2v</sub> </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>12</sub> </td>
+							<td align="center">2.75 </td>
+							<td align="center"> 26 </td>
+							<td align="center"> C<sub>2v</sub> </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>14</sub> </td>
+							<td align="center">2.74 </td>
+							<td align="center"> 33 </td>
+							<td align="center"> C<sub>s</sub> </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>16</sub> </td>
+							<td align="center">2.73 </td>
+							<td align="center"> 36 </td>
+							<td align="center"> T<sub>d</sub> </td>
+						</tr>
+						<tbody>
+					</table>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Cluster Cohesive Energy </h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/Cohesive_Energy.jpg"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Clusters on BN </h2>
+					</div>
+					<div id="appdiv3"></div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold/BN Clusters Parameters</h2>
+					</div>
+					<table style="font-size:	22px">
+						<thead>
+							<tr>
+								<th></th>
+								<th align="center" colspan="2">2D Cluster
+									<th>
+							</tr>
+							<tr>
+								<th>Structure</th>
+								<th>Avg. Bond (&#x212B;)</th>
+								<th>Bonds (#)</th>
+								<th>Symmetry</th>
+							</tr>
+							<tr>
+						</thead>
+						<td align="left">Au<sub>6</sub> </td>
+						<td align="center">2.69 (2.70) </td>
+						<td align="center"> 9 (9) </td>
+						<td align="center"> D<sub>3h</sub> (D<sub>3h</sub>) </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>10</sub> </td>
+							<td align="center">2.71 (2.72) </td>
+							<td align="center"> 19 (19) </td>
+							<td align="center"> D<sub>2h</sub> (D<sub>2h</sub>) </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>12</sub> </td>
+							<td align="center">2.71 (2.72) </td>
+							<td align="center"> 24 (24) </td>
+							<td align="center"> D<sub>3h</sub> (D<sub>3h</sub>) </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>14</sub> </td>
+							<td align="center">2.71 (2.72) </td>
+							<td align="center"> 29 (29) </td>
+							<td align="center"> D<sub>2h</sub> (D<sub>2h</sub>) </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>16</sub> </td>
+							<td align="center">2.72 (2.72) </td>
+							<td align="center"> 34 (34) </td>
+							<td align="center"> C<sub>s</sub> (C<sub>s</sub>) </td>
+						</tr>
+						<tbody>
+					</table>
+
+					<table style="font-size:	22px">
+						<thead>
+							<tr>
+								<th></th>
+								<th align="center" colspan="2">3D Cluster
+									<th>
+							</tr>
+							<tr>
+								<th>Structure</th>
+								<th>Avg. Bond (&#x212B;)</th>
+								<th>Bonds (#)</th>
+								<th>Symmetry</th>
+							</tr>
+						</thead>
+						<tr>
+							<td align="left">Au<sub>6</sub> </td>
+							<td align="center">2.73 (2.74) </td>
+							<td align="center"> 10 (10) </td>
+							<td align="center"> C<sub>s</sub> (C<sub>s</sub>) </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>10</sub> </td>
+							<td align="center">2.72 (2.72) </td>
+							<td align="center"> 23 (18) </td>
+							<td align="center"> C<sub>2v</sub> (C<sub>s</sub>) </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>12</sub> </td>
+							<td align="center">2.75 (2.76) </td>
+							<td align="center"> 26 (24) </td>
+							<td align="center"> C<sub>2v</sub> (C<sub>2v</sub>) </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>14</sub> </td>
+							<td align="center">2.74 (2.74) </td>
+							<td align="center"> 33 (29) </td>
+							<td align="center"> C<sub>s</sub> (C<sub>1</sub>) </td>
+						</tr>
+						<tr>
+							<td align="left">Au<sub>16</sub> </td>
+							<td align="center">2.73 (2.72) </td>
+							<td align="center"> 36 (32) </td>
+							<td align="center"> T<sub>d</sub> (C<sub>1</sub>) </td>
+						</tr>
+						<tbody>
+					</table>
+				</section>
+				<section>
+					<div id="slideheader">
+						<h2>Gold Clusters </h2>
+					</div>
+					<table style="font-size:	22px">
+						<thead>
+							<tr>
+								<th></th>
+								<th align="center" colspan="2">2D Cluster Band Gap (eV)
+									<th>
+							</tr>
+							<tr>
+								<th> Structure</th>
+								<th align="center"> Ref <sup>1</sup> </th>
+								<th align="center"> Isolated </th>
+								<th align="center"> Cluster/BN </th>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>6</sub> </td>
+								<td align="center"> 2.06</td>
+								<td align="center"> 1.76 (2.76) </td>
+								<td align="center"> 1.73 </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>10</sub> </td>
+								<td align="center"> 1.28 </td>
+								<td align="center"> 0.96 (1.47) </td>
+								<td align="center"> 0.81 </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>12</sub> </td>
+								<td align="center"> 0.97</td>
+								<td align="center"> 0.65 (1.47) </td>
+								<td align="center"> 0.63 </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>14</sub> </td>
+								<td align="center"> 0.19 </td>
+								<td align="center"> 0.00 (0.35) </td>
+								<td align="center"> 0.00 </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>16</sub> </td>
+								<td align="center"> </td>
+								<td align="center"> 0.24 (0.95) </td>
+								<td align="center"> 0.18 </td>
+							</tr>
+						</thead>
+						<tbody>
+					</table>
+					<fsize>
+						<fl>
+							<li> <a href="https://doi.org/10.1016/j.cplett.2004.05.095"> L. Xiao et al. (2004) Chemical Physics Letters 392, 452</a></li>
+						</fl>
+					</fsize>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Clusters</h2>
+					</div>
+					<table style="font-size:	22px">
+						<thead>
+							<tr>
+								<th></th>
+								<th align="center" colspan="2">3D Cluster Band Gap (eV)
+									<th>
+							</tr>
+							<tr>
+								<th> Structure</th>
+								<th align="center"> Ref <sup>1,2</sup> </th>
+								<th align="center"> Isolated </th>
+								<th align="center"> Cluster/BN </th>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>6</sub> </td>
+								<td align="center"> 1.75 </td>
+								<td align="center"> 1.22 (1.91) </td>
+								<td align="center"> 1.53 </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>10</sub> </td>
+								<td align="center"> 0.91 </td>
+								<td align="center"> 0.29 (0.72) </td>
+								<td align="center"> 0.45 </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>12</sub> </td>
+								<td align="center"> 0.95 </td>
+								<td align="center"> 0.92 (1.43) </td>
+								<td align="center"> 0.72 </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>14</sub> </td>
+								<td align="center"> 0.44 </td>
+								<td align="center"> 0.35 (0.53) </td>
+								<td align="center"> 0.18 </td>
+							</tr>
+							<tr>
+								<td align="left">Au<sub>16</sub> </td>
+								<td align="center"> </td>
+								<td align="center"> 0.24 (0.95) </td>
+								<td align="center"> 0.54 </td>
+							</tr>
+						</thead>
+						<tbody>
+					</table>
+					<fsize>
+						<fl>
+							<li> <a href="https://doi.org/10.1016/j.cplett.2004.05.095"> L. Xiao et al. (2004) Chemical Physics Letters 392, 452</a></li>
+							<li> <a href="https://doi.org/10.1063/1.2179419"> L. Xiao et al. (2006) The Journal of Chemical Physics 114309</a></li>
+						</fl>
+					</fsize>
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>Gold Cluster Electronic Gap </h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/Gaps.jpg"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Conjugated Gold Cluster Electronic Gap </h2>
+					</div>
+					<img width="75%" height="75%" ; data-src="images/Bare_BN.jpg"></img>
+				</section>
+
+			</section>
+			<!-- Gold BN End -->
+
+			<!-- Current/Future -->
+			<section>
+				<div id="slideheader">
+					<h2>Current/Future Work</h2>
+				</div>
+				<ul>
+					<li class="fragment"> Improve accuracy for the exact exchange integral in PBC (NWChem)</li>
+					<li class="fragment"> AIMD studies on the peptide/BNNTs interface in a solvated environment</li>
+					<li class="fragment"> Test plane-wave AIMD simulations with O(N) DFT methods</li>
+				</ul>
+				<img style="float:right;width:55%;height:55%;" data-src="images/BSA_BNNT_2.png"></img>
+			</section>
+
+			<!-- Current/Future End-->
+
+			<!-- Challenges -->
+			<section>
+				<h2>Challenges</h2>
+				<ul>
+					<li class="fragment">Computation power (Hardware/Software) </li>
+					<li class="fragment">Scaling of theories (CCSD vs. DFT vs. MD) </li>
+					<li class="fragment">Choosing the "right" theory</li>
+					<li class="fragment">Inclusion of all releveant paramters (ions, solution, pH) </li>
+					<li class="fragment">Asking the right questions </li>
+				</ul>
+			</section>
+			<!-- Challenges End-->
+
+			<!-- Conclusion -->
+			<section>
+				<h2>Conclusion</h2>
+				<ul>
+					<li class="fragment">Layed the foundation for protein BNNT simulations </li>
+					<li class="fragment">Started to investigate functionalized structurs </li>
+					<li class="fragment">Building framework for future large scale applications </li>
+					<li class="fragment">Flexibility to look a similar structures (e.g. Polymers) </li>
+				</ul>
+			</section>
+			<!-- Conclusion End-->
+
+			<!-- Acknowledgements -->
+			<section>
+				<h2>Acknowledgements</h2>
+				<ul>
+					<li> Ravindra Pandey </li>
+					<li> Eric Bylasksa </li>
+					<li> Gregory Odegard </li>
+					<li> Nabanita Saikia </li>
+					<li> Max Seel </li>
+					<li> Wil Slough </li>
+					<li> Yoke Khin Yap </li>
+				</ul>
+			</section>
+			<!-- Acknowledgements End -->
+
+			<!-- Questions -->
+			<section>
+				<h2>Questions</h2>
+			</section>
+			<!-- Questions -->
+
+			<script src="lib/js/head.min.js"></script>
+			<script src="js/reveal.js"></script>
+
+			<script>
+				// More info about config & dependencies:
+				// - https://github.com/hakimel/reveal.js#configuration
+				// - https://github.com/hakimel/reveal.js#dependencies
+				Reveal.initialize({
+					math: {
+						// mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+						config: 'TeX-AMS_HTML-full'
+					},
+					dependencies: [
+						//				{ src: 'https://d3js.org/d3.v4.min.js' },
+						//				{ src: 'plugin/d3js/d3js.js' },
+						//				{ src: 'plugin/markdown/marked.js' },
+						//				{ src: 'plugin/markdown/markdown.js' },
+						{
+							src: 'lib/js/classList.js'
+						},
+						{
+							src: 'plugin/math/math.js',
+							async: true
+						},
+						//				{ src: 'plugin/notes/notes.js', async: true },
+						//				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					]
+				});
+			</script>
+
+
+</body>
+
+</html>
