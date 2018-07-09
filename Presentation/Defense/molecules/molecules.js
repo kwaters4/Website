@@ -205,7 +205,7 @@
             jarFile: "JmolAppletSigned.jar",
             isSigned: true,
         //  script: "set antialiasDisplay; set zoomLarge true; load jsmol/data/caffeine.mol",
-            script: "background white; set antialiasDisplay; load molecules/BN_88.xyz; set frank off",
+            script: "background white; set antialiasDisplay; load molecules/BNNT_80_frame.xyz; set frank off",
         //        scr: 'test.spt',
         //        script: "set zoomLarge true",
         //  serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
