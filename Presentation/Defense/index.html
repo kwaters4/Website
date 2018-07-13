@@ -474,12 +474,12 @@
 						<h2>Structures of AIMD Simulations </h2>
 					</div>
 					<div class="column">
-						<div id="appdiv6"></div>
-						Monolayer h-BN
-					</div>
-					<div class="column">
 						<div id="appdiv7"></div>
 						(8,0) Nanotube
+					</div>
+					<div class="column">
+						<div id="appdiv6"></div>
+						Monolayer h-BN
 					</div>
 				</section>
 
@@ -950,9 +950,95 @@
 
 			<!-- Exact Exchange -->
 			<section>
-				<div id="slideheader">
-					<h2>Exact Exchange (Theory Development)</h2>
+				<section>
+					<div id="slideheader">
+						<h2>Exact-Exchange (Theory Development) </h2>
+						<fsize> Bylaska & Waters In Prepartation </a>
+						</fsize>
+					</div>
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>Formulation</h2>
+					</div>
+					Exact-Exchange in Real Space
+					$$
+					\frac{1}{2} \sum_{\uparrow,\downarrow} \sum^{N^{\sigma}_{occ}}_{n=1} \sum^{N^{\sigma}_{occ}}_{m=1} \int\int_V \frac{\rho^{\sigma}_{nm}(\mathbf{r}) \rho^{\sigma}_{nm}(\mathbf{r})}{|\mathbf{r}-\mathbf{r'}|} d\mathbf{r} d\mathbf{r'}
+					$$
+				</br>
+					Exact-Exchange in Reciprocal Space
+					$$
+					\frac{1}{2\Omega} \sum_{\uparrow,\downarrow}\frac{1}{V_{BZ}^2}\int_{V_{BZ}} d\mathbf{k} \int_{V_{BZ}} d\mathbf{l} \sum^{N^{\sigma}_{occ}}_{n=1} \sum^{N^{\sigma}_{occ}}_{m=1} \sum_{\mathbf{G}} \frac{4\pi}{|\mathbf{G}-\mathbf{k}+\mathbf{l}|^2} \rho^{\sigma}_{m\mathbf{l};n\mathbf{k}}(-\mathbf{G})\rho^{\sigma}_{m\mathbf{k};n\mathbf{l}}(\mathbf{G})
+					$$
+				</br>
+					Filtered Potential
+					$$
+					V_f{(\mathbf{G})} = \frac{1}{{V_{BZ}}^2} \int\int_{V} \frac{4\pi}{|\mathbf{G}-\mathbf{k}+\mathbf{l}|^2}d\mathbf{k}d\mathbf{l}
+					$$
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Exact-Exchange</h2>
+					</div>
+					<img width="65%" height="65%" ; data-src="images/Singularities.jpg"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Seperation of Singularities (G=0)</h2>
+					</div>
+					$$
+					V_f{(\mathbf{G=0})} = \frac{1}{{V_{BZ}}^2} \int\int_{V_{BZ}} \frac{4\pi}{|\mathbf{l}-\mathbf{k}|^2}d\mathbf{k}d\mathbf{l}
+					$$
+				</br>
+					$$
+					= \frac{4\pi}{{V_{BZ}}^2} \int\int_{V_{BZ}} \frac{1 - e^{\alpha|\mathbf{l} - \mathbf{k}|^2}}{|\mathbf{l}-\mathbf{k}|^2}d\mathbf{k}d\mathbf{l} + \int\int_{V_{BZ}} \frac{e^{\alpha|\mathbf{l} - \mathbf{k}|^2}}{|\mathbf{l}-\mathbf{k}|^2}d\mathbf{k}d\mathbf{l}
+					$$
+				</br>
+					$$
+					\approx \frac{4\pi}{{V_{BZ}}^2} \int\int_{V_{BZ}} \frac{1 - e^{\alpha|\mathbf{l} - \mathbf{k}|^2}}{|\mathbf{l}-\mathbf{k}|^2}d\mathbf{k}d\mathbf{l} + \frac{8\pi^2}{V_{BZ}}\sqrt{\frac{\pi}{\alpha}}
+					$$
+				</section>
+
+
+				<section>
+					<div id="slideheader">
+						<h2>Special Points (G=0,1,2,3)</h2>
+					</div>
+					<div class="column">
+					$$
+					\lim_{V\to\infty} \int\int_{V_{BZ}} \frac{e^{\alpha|\mathbf{l} - \mathbf{k}|^2}}{|\mathbf{l}-\mathbf{k} + \mathbf{G}_{{i_1},{i_2},{i_3}}|^2}d\mathbf{k}d\mathbf{l}
+					$$
+					</div>
+					<div class="column">
+					$$
+					\frac{8\pi^2}{V_{BZ}}\sqrt{\frac{\pi}{\alpha}}
+					$$
+				</br>
+					$$
+					\frac{\pi^2}{V_{BZ}^{4/3}2\alpha}
+					$$
+				</br>
+					$$
+					\frac{\pi^{3/2}}{V_{BZ}^{5/3}\alpha^{3/2}}
+					$$
+				</br>
+					$$
+					\frac{\pi}{V_{BZ}^{2}\alpha^{2}}
+					$$
 				</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>Graphical Representation </h2>
+					</div>
+					<img width="65%" height="65%" ; data-src="images/Singularities.jpg"></img>
+				</section>
+
 			</section>
 			<!-- Exact Exchange End -->
 
@@ -1055,4 +1141,3 @@
 
 
 </html>
-
