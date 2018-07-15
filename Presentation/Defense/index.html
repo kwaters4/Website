@@ -958,78 +958,74 @@
 					</div>
 				</section>
 
-
 				<section>
 					<div id="slideheader">
 						<h2>Formulation</h2>
 					</div>
+					<p class="fragment">
 					Exact-Exchange in Real Space
 					$$
 					\frac{1}{2} \sum_{\uparrow,\downarrow} \sum^{N^{\sigma}_{occ}}_{n=1} \sum^{N^{\sigma}_{occ}}_{m=1} \int\int_V \frac{\rho^{\sigma}_{nm}(\mathbf{r}) \rho^{\sigma}_{nm}(\mathbf{r})}{|\mathbf{r}-\mathbf{r'}|} d\mathbf{r} d\mathbf{r'}
 					$$
-				</br>
+				</p>
+					<p class="fragment">
 					Exact-Exchange in Reciprocal Space
 					$$
 					\frac{1}{2\Omega} \sum_{\uparrow,\downarrow}\frac{1}{V_{BZ}^2}\int_{V_{BZ}} d\mathbf{k} \int_{V_{BZ}} d\mathbf{l} \sum^{N^{\sigma}_{occ}}_{n=1} \sum^{N^{\sigma}_{occ}}_{m=1} \sum_{\mathbf{G}} \frac{4\pi}{|\mathbf{G}-\mathbf{k}+\mathbf{l}|^2} \rho^{\sigma}_{m\mathbf{l};n\mathbf{k}}(-\mathbf{G})\rho^{\sigma}_{m\mathbf{k};n\mathbf{l}}(\mathbf{G})
 					$$
-				</br>
+				</p>
+					<p class="fragment">
 					Filtered Potential
 					$$
 					V_f{(\mathbf{G})} = \frac{1}{{V_{BZ}}^2} \int\int_{V} \frac{4\pi}{|\mathbf{G}-\mathbf{k}+\mathbf{l}|^2}d\mathbf{k}d\mathbf{l}
 					$$
+				</p>
 				</section>
 
-				<section>
-					<div id="slideheader">
-						<h2>Exact-Exchange</h2>
-					</div>
-					<img width="65%" height="65%" ; data-src="images/Singularities.jpg"></img>
-				</section>
 
 				<section>
 					<div id="slideheader">
 						<h2>Seperation of Singularities (G=0)</h2>
 					</div>
+					<p class="fragment">
 					$$
 					V_f{(\mathbf{G=0})} = \frac{1}{{V_{BZ}}^2} \int\int_{V_{BZ}} \frac{4\pi}{|\mathbf{l}-\mathbf{k}|^2}d\mathbf{k}d\mathbf{l}
 					$$
-				</br>
+				</p>
+					<p class="fragment">
 					$$
 					= \frac{4\pi}{{V_{BZ}}^2} \int\int_{V_{BZ}} \frac{1 - e^{\alpha|\mathbf{l} - \mathbf{k}|^2}}{|\mathbf{l}-\mathbf{k}|^2}d\mathbf{k}d\mathbf{l} + \int\int_{V_{BZ}} \frac{e^{\alpha|\mathbf{l} - \mathbf{k}|^2}}{|\mathbf{l}-\mathbf{k}|^2}d\mathbf{k}d\mathbf{l}
 					$$
-				</br>
+				</p>
+					<p class="fragment">
 					$$
 					\approx \frac{4\pi}{{V_{BZ}}^2} \int\int_{V_{BZ}} \frac{1 - e^{\alpha|\mathbf{l} - \mathbf{k}|^2}}{|\mathbf{l}-\mathbf{k}|^2}d\mathbf{k}d\mathbf{l} + \frac{8\pi^2}{V_{BZ}}\sqrt{\frac{\pi}{\alpha}}
 					$$
+				</p>
 				</section>
 
+				<section>
+					<div id="slideheader">
+						<h2>Points with Singularities</h2>
+					</div>
+					<img width="65%" height="65%" ; data-src="images/Singularities.jpg"></img>
+				</br>
+					<fsize> <a href="https://www.elsevier.com/books/annual-reports-in-computational-chemistry/dixon/978-0-444-63940-"> E.Bylaska Annual Reports in Computational Chemistry, Volume 13 Chapter 3 (2017)</a></fsize>
+				</section>
 
 				<section>
 					<div id="slideheader">
 						<h2>Special Points (G=0,1,2,3)</h2>
 					</div>
-					<div class="column">
 					$$
-					\lim_{V\to\infty} \int\int_{V_{BZ}} \frac{e^{\alpha|\mathbf{l} - \mathbf{k}|^2}}{|\mathbf{l}-\mathbf{k} + \mathbf{G}_{{i_1},{i_2},{i_3}}|^2}d\mathbf{k}d\mathbf{l}
+					\lim_{V\to\infty} \int\int_{V_{BZ}} \frac{e^{\alpha|\mathbf{l} - \mathbf{k}|^2}}{|\mathbf{l}-\mathbf{k} + \mathbf{G}_{{i_1},{i_2},{i_3}}|^2}d\mathbf{k}d\mathbf{l} =
+					\begin{cases}
+					\frac{8\pi^{3/2}}{V_{BZ}\alpha^{1/2}} & |i_{1}| + |i_{2}| + |i_{3}| = 0 \\
+					\frac{\pi^2}{V_{BZ}^{4/3}2\alpha}              & |i_{1}| + |i_{2}| + |i_{3}| = 1 \\
+					\frac{\pi^{3/2}}{V_{BZ}^{5/3}\alpha^{3/2}}     & |i_{1}| + |i_{2}| + |i_{3}| = 2 \\
+					\frac{\pi}{V_{BZ}^{2}\alpha^{2}}               & |i_{1}| + |i_{2}| + |i_{3}| = 3
+					\end{cases}
 					$$
-					</div>
-					<div class="column">
-					$$
-					\frac{8\pi^2}{V_{BZ}}\sqrt{\frac{\pi}{\alpha}}
-					$$
-				</br>
-					$$
-					\frac{\pi^2}{V_{BZ}^{4/3}2\alpha}
-					$$
-				</br>
-					$$
-					\frac{\pi^{3/2}}{V_{BZ}^{5/3}\alpha^{3/2}}
-					$$
-				</br>
-					$$
-					\frac{\pi}{V_{BZ}^{2}\alpha^{2}}
-					$$
-				</div>
 				</section>
 
 				<section>
@@ -1037,6 +1033,27 @@
 						<h2>Graphical Representation </h2>
 					</div>
 					<img width="65%" height="65%" ; data-src="images/Singularities.jpg"></img>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>1/R Potential</h2>
+					<img width="100%" height="100%" ; data-src="images/Periodic_Real_Space.jpg"></img>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>1/R Potential</h2>
+					<img width="100%" height="100%" ; data-src="images/Periodic_8.jpg"></img>
+					</div>
+				</section>
+
+				<section>
+					<div id="slideheader">
+						<h2>1/R Potential</h2>
+					<img width="100%" height="100%" ; data-src="images/Periodic_64.jpg"></img>
+					</div>
 				</section>
 
 			</section>
@@ -1048,11 +1065,18 @@
 					<h2>Current/Future Work</h2>
 				</div>
 				<ul>
-					<li class="fragment"> Improve accuracy for the exact exchange integral in PBC (NWChem)</li>
-					<li class="fragment"> AIMD studies on the peptide/BNNTs interface in a solvated environment</li>
-					<li class="fragment"> Test plane-wave AIMD simulations with O(N) DFT methods</li>
+					<li class="fragment" data-fragment-index="1"> AIMD studies on the peptide/BNNTs interface in a solvated environment</li>
+					<li class="fragment" data-fragment-index="2"> Post-doc Position at the Army Research Laboratory </li>
+					<li class="fragment" data-fragment-index="3"> 2D Polymer/Material with intergrated theory and experimental team </li>
 				</ul>
-				<img style="float:right;width:55%;height:55%;" data-src="images/BSA_BNNT_2.png"></img>
+			</br>
+				<img class="fragment" data-fragment-index="3" style="float:left;width:40%;height:40%;" data-src="images/Graphamid.jpg"></img>
+				<img class="fragment" data-fragment-index="1" style="float:right;width:60%;height:60%;" data-src="images/BSA_BNNT_2.png"></img>
+			</br>
+				<div id="footer">
+					<fsize>
+						<a class="fragment" data-fragment-index="3" href="https://doi.org/10.1038/s41598-018-22011-7"> Sandoz-Rosado et. al. Scientific Reports Volume 8 (2018)</a>
+					</fsize>
 			</section>
 
 			<!-- Current/Future End-->

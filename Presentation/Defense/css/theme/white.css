@@ -71,7 +71,7 @@ body {
   font-size: 14px; }
 
 .reveal fsize {
-  font-size: 18px; 
+  font-size: 18px;
   font-style: italic; }
 
 .reveal h1 {
@@ -255,11 +255,11 @@ body {
   border-bottom: none; }
 
 .reveal sup {
-  font-size: 18px; 
+  font-size: 18px;
   vertical-align: super; }
 
 .reveal sub {
-  font-size: 18px; 
+  font-size: 18px;
   vertical-align: sub; }
 
 .reveal small {
