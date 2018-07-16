@@ -82,6 +82,12 @@ body {
  *********************************************/
 /* Create two equal columns that floats next to each other */
 
+.ImageBorder
+{
+    border-width: 10px;
+    border-color: Black;
+}
+
 .column {
 	float: left;
 	width: 50%;
