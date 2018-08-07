@@ -97,7 +97,7 @@
             //console: "none", // default will be jmolApplet0_infodiv, but you can designate another div here or "none"
         }
         var Info3 = {
-            width: 500,
+            width: 800,
             height: 500,
             debug: false,
             color: "transparent",
