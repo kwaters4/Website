@@ -5,7 +5,7 @@ title: Publications
 
 *  <strong>Title</strong>    : Two-Dimensional Gold Quantum Dots with Tunable Bandgaps <br /> 
    <strong>Authors</strong>  : Shiva Bhandari, Boyi Hao, Kevin Waters, Chee Huei Lee, Juan-Carlos Idrobo, Dongyan Zhang, Ravindra Pandey, Yoke Khin Yap <br /> 
-   <strong>Location</strong> : ACS Nano,2019 13,4 ,4347-4353 <br /> 
+   <strong>Location</strong> : ACS Nano, 2019, 13, 4, 4347-4353 <br /> 
    <strong>DOI</strong>      : [10.1021/acsnano.8b09559](https://doi.org/10.1021/acsnano.8b09559)
 
 *  <strong>Title</strong>    : Multiscale Modeling of PEEK using Reactive Molecular Dynamics Modeling and Micromechanics <br /> 
